@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://puguolin.Github.io</id>
-    <title>蒲某某的笔记</title>
-    <updated>2020-03-21T06:24:04.752Z</updated>
+    <title>PuGuolin notes</title>
+    <updated>2020-03-21T06:25:53.768Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://puguolin.Github.io"/>
     <link rel="self" href="https://puguolin.Github.io/atom.xml"/>
-    <subtitle>蒲某某的笔记</subtitle>
+    <subtitle>PuGuolin notes</subtitle>
     <logo>https://puguolin.Github.io/images/avatar.png</logo>
     <icon>https://puguolin.Github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 蒲某某的笔记</rights>
+    <rights>All rights reserved 2020, PuGuolin notes</rights>
     <entry>
         <title type="html"><![CDATA[java 多态]]></title>
         <id>https://puguolin.Github.io/post/java-duo-tai/</id>
