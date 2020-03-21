@@ -4,552 +4,65 @@
     <meta charset="utf-8" >
 
 <title>文章归档 | 蒲某某的笔记</title>
-<meta name="description" content="蒲某某的笔记">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584769694685">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584769840689">
 <link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
+
+    <meta name="description" content="蒲某某的笔记">
   </head>
   <body>
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://puguolin.Github.io">蒲某某的笔记</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584769840689" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="/" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
         
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
+      
         
-      </ul>
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
   </div>
-</nav>
-
-    
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          
-
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
-            
-              <h3 class="year" data-aos-delay="500">2020</h3>
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/kuai-ji-yuan-su/">
-                      <h4 class="post-title">
-                        块级元素
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/audio-yin-pin-yuan-su/">
-                      <h4 class="post-title">
-                        audio音频元素
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/video-qian-ru-shi-pin-yuan-su/">
-                      <h4 class="post-title">
-                        video嵌入视频元素
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/lessbuttongreaterlessbuttongreater/">
-                      <h4 class="post-title">
-                        &lt;button&gt;&lt;/button&gt;
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/biao-zhi-dui-xiang-nei-yi-chu-wen-ben-text-overflow/">
-                      <h4 class="post-title">
-                        标志对象内溢出文本 text-overflow
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/yin-ying-xiao-guo-text-shadow/">
-                      <h4 class="post-title">
-                        阴影效果 text-shadow
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/kong-bai-fu-chu-li-white-space/">
-                      <h4 class="post-title">
-                        空白符处理 white-space
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/textarea-wen-ben-yu-yuan-su/">
-                      <h4 class="post-title">
-                        textarea 文本域元素
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/biao-dan-yuan-su/">
-                      <h4 class="post-title">
-                        表单元素：
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/lesslabergreaterbiao-qian/">
-                      <h4 class="post-title">
-                        &lt;laber&gt;标签：
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/html-biao-dan-yuan-su/">
-                      <h4 class="post-title">
-                        html表单元素
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/html-biao-qian/">
-                      <h4 class="post-title">
-                        html标签
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/cshu-ju-lei-xing/">
-                      <h4 class="post-title">
-                        c#数据类型
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/imagelist/">
-                      <h4 class="post-title">
-                        ImageList
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/picturebox/">
-                      <h4 class="post-title">
-                        PictureBox
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/listview/">
-                      <h4 class="post-title">
-                        ListView
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/treeview/">
-                      <h4 class="post-title">
-                        TreeView
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/groupbox/">
-                      <h4 class="post-title">
-                        GroupBox
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/trackbar/">
-                      <h4 class="post-title">
-                        TrackBar
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/numericupdown/">
-                      <h4 class="post-title">
-                        NumericUpDown
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/date/">
-                      <h4 class="post-title">
-                        date
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/listbox/">
-                      <h4 class="post-title">
-                        ListBox
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/checkedlistbox/">
-                      <h4 class="post-title">
-                        CheckedListBox
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/fu-xuan-kuang-checkbox/">
-                      <h4 class="post-title">
-                        复选框Checkbox
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/xia-la-lie-biao-kuang-cobobox/">
-                      <h4 class="post-title">
-                        下拉列表框 CoboBox
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/textbox/">
-                      <h4 class="post-title">
-                        Textbox
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/cchuang-ti-mo-ren-she-zhi/">
-                      <h4 class="post-title">
-                        c#窗体默认设置
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/hashtable-lei/">
-                      <h4 class="post-title">
-                        HashTable类
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/fan-xing/">
-                      <h4 class="post-title">
-                        泛型
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/stack-lei/">
-                      <h4 class="post-title">
-                        Stack类
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/oueue-lei/">
-                      <h4 class="post-title">
-                        Oueue类
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/arraylist-chang-yong-de-shu-xing-he-fang-fa/">
-                      <h4 class="post-title">
-                        ArrayList常用的属性和方法
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/datetime-lei/">
-                      <h4 class="post-title">
-                         DateTime类
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/cstringbiilder-lei/">
-                      <h4 class="post-title">
-                        C#StringBiilder类
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/c-yi-chang-chu-li/">
-                      <h4 class="post-title">
-                        C# 异常处理
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/c-jie-kou-interface/">
-                      <h4 class="post-title">
-                        C# 接口（Interface）
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/c-duo-tai-xing/">
-                      <h4 class="post-title">
-                        C# 多态性
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/c-ji-cheng/">
-                      <h4 class="post-title">
-                        C# 继承
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/c-lei-class/">
-                      <h4 class="post-title">
-                        C# 类（Class）
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/c-mei-ju-enum/">
-                      <h4 class="post-title">
-                        C# 枚举（Enum）
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/c-jie-gou-ti-struct/">
-                      <h4 class="post-title">
-                        C# 结构体（Struct）
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/cshu-zu/">
-                      <h4 class="post-title">
-                        C#数组
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/c-fang-fa/">
-                      <h4 class="post-title">
-                        C# 方法
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/cfeng-zhuang/">
-                      <h4 class="post-title">
-                         C#封装
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://puguolin.Github.io/post/c#-1/">
-                      <h4 class="post-title">
-                        c# 数据类型
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-            
-          </div>
-        </div>
-        <div class="row flex-edges">
-  
-  
-</div>
-
-      </div>
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://puguolin.Github.io/images/avatar.png?v=1584769694685" class="no-responsive avatar">
-    <div class="text-muted">蒲某某的笔记</div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
     <div class="social-container">
       
         
@@ -563,184 +76,507 @@
         
       
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
+    <div class="site-description">
+      蒲某某的笔记
     </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://puguolin.Github.io/post/kuai-ji-yuan-su/">块级元素</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://puguolin.Github.io/post/audio-yin-pin-yuan-su/">audio音频元素</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://puguolin.Github.io/post/video-qian-ru-shi-pin-yuan-su/">video嵌入视频元素</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://puguolin.Github.io/post/lessbuttongreaterlessbuttongreater/">&lt;button&gt;&lt;/button&gt;</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://puguolin.Github.io/post/biao-zhi-dui-xiang-nei-yi-chu-wen-ben-text-overflow/">标志对象内溢出文本 text-overflow</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://puguolin.Github.io/post/yin-ying-xiao-guo-text-shadow/">阴影效果 text-shadow</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://puguolin.Github.io/post/kong-bai-fu-chu-li-white-space/">空白符处理 white-space</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://puguolin.Github.io/post/textarea-wen-ben-yu-yuan-su/">textarea 文本域元素</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://puguolin.Github.io/post/biao-dan-yuan-su/">表单元素：</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://puguolin.Github.io/post/lesslabergreaterbiao-qian/">&lt;laber&gt;标签：</a>
-            </li>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </ul>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://puguolin.Github.io/tag/2U54aynpl/" class="badge ">
-          html
-        </a>
-      
-        <a href="https://puguolin.Github.io/tag/O8fzvB9LZ/" class="badge warning">
-          C#
-        </a>
-      
-        <a href="https://puguolin.Github.io/tag/6Y7L7lVqU/" class="badge ">
-          C#窗体
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
 
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
 
+          <h2 class="archives-title">文章归档</h2>
+          <div class="archives-container">
+            
+              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2020</h2>
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/kuai-ji-yuan-su/">
+                      <h2 class="post-title">
+                        块级元素
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/audio-yin-pin-yuan-su/">
+                      <h2 class="post-title">
+                        audio音频元素
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/video-qian-ru-shi-pin-yuan-su/">
+                      <h2 class="post-title">
+                        video嵌入视频元素
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/lessbuttongreaterlessbuttongreater/">
+                      <h2 class="post-title">
+                        &lt;button&gt;&lt;/button&gt;
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/biao-zhi-dui-xiang-nei-yi-chu-wen-ben-text-overflow/">
+                      <h2 class="post-title">
+                        标志对象内溢出文本 text-overflow
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/yin-ying-xiao-guo-text-shadow/">
+                      <h2 class="post-title">
+                        阴影效果 text-shadow
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/kong-bai-fu-chu-li-white-space/">
+                      <h2 class="post-title">
+                        空白符处理 white-space
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/textarea-wen-ben-yu-yuan-su/">
+                      <h2 class="post-title">
+                        textarea 文本域元素
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/biao-dan-yuan-su/">
+                      <h2 class="post-title">
+                        表单元素：
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/lesslabergreaterbiao-qian/">
+                      <h2 class="post-title">
+                        &lt;laber&gt;标签：
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/html-biao-dan-yuan-su/">
+                      <h2 class="post-title">
+                        html表单元素
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/html-biao-qian/">
+                      <h2 class="post-title">
+                        html标签
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/cshu-ju-lei-xing/">
+                      <h2 class="post-title">
+                        c#数据类型
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/imagelist/">
+                      <h2 class="post-title">
+                        ImageList
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/picturebox/">
+                      <h2 class="post-title">
+                        PictureBox
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/listview/">
+                      <h2 class="post-title">
+                        ListView
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/treeview/">
+                      <h2 class="post-title">
+                        TreeView
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/groupbox/">
+                      <h2 class="post-title">
+                        GroupBox
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/trackbar/">
+                      <h2 class="post-title">
+                        TrackBar
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/numericupdown/">
+                      <h2 class="post-title">
+                        NumericUpDown
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/date/">
+                      <h2 class="post-title">
+                        date
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/listbox/">
+                      <h2 class="post-title">
+                        ListBox
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/checkedlistbox/">
+                      <h2 class="post-title">
+                        CheckedListBox
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/fu-xuan-kuang-checkbox/">
+                      <h2 class="post-title">
+                        复选框Checkbox
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/xia-la-lie-biao-kuang-cobobox/">
+                      <h2 class="post-title">
+                        下拉列表框 CoboBox
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/textbox/">
+                      <h2 class="post-title">
+                        Textbox
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/cchuang-ti-mo-ren-she-zhi/">
+                      <h2 class="post-title">
+                        c#窗体默认设置
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/hashtable-lei/">
+                      <h2 class="post-title">
+                        HashTable类
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/fan-xing/">
+                      <h2 class="post-title">
+                        泛型
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/stack-lei/">
+                      <h2 class="post-title">
+                        Stack类
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/oueue-lei/">
+                      <h2 class="post-title">
+                        Oueue类
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/arraylist-chang-yong-de-shu-xing-he-fang-fa/">
+                      <h2 class="post-title">
+                        ArrayList常用的属性和方法
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/datetime-lei/">
+                      <h2 class="post-title">
+                         DateTime类
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/cstringbiilder-lei/">
+                      <h2 class="post-title">
+                        C#StringBiilder类
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/c-yi-chang-chu-li/">
+                      <h2 class="post-title">
+                        C# 异常处理
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/c-jie-kou-interface/">
+                      <h2 class="post-title">
+                        C# 接口（Interface）
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/c-duo-tai-xing/">
+                      <h2 class="post-title">
+                        C# 多态性
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/c-ji-cheng/">
+                      <h2 class="post-title">
+                        C# 继承
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/c-lei-class/">
+                      <h2 class="post-title">
+                        C# 类（Class）
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/c-mei-ju-enum/">
+                      <h2 class="post-title">
+                        C# 枚举（Enum）
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/c-jie-gou-ti-struct/">
+                      <h2 class="post-title">
+                        C# 结构体（Struct）
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/cshu-zu/">
+                      <h2 class="post-title">
+                        C#数组
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/c-fang-fa/">
+                      <h2 class="post-title">
+                        C# 方法
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/cfeng-zhuang/">
+                      <h2 class="post-title">
+                         C#封装
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://puguolin.Github.io/post/c#-1/">
+                      <h2 class="post-title">
+                        c# 数据类型
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+            
+          </div>
+
+          <div class="pagination-container">
+  
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script type="application/javascript">
 
 AOS.init();
 
-hljs.initHighlightingOnLoad()
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
 
 
 
