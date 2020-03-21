@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://puguolin.Github.io</id>
     <title>PuGuolin notes</title>
-    <updated>2020-03-21T06:27:55.428Z</updated>
+    <updated>2020-03-21T06:48:05.344Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://puguolin.Github.io"/>
     <link rel="self" href="https://puguolin.Github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://puguolin.Github.io/images/avatar.png</logo>
     <icon>https://puguolin.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, PuGuolin notes</rights>
+    <entry>
+        <title type="html"><![CDATA[a]]></title>
+        <id>https://puguolin.Github.io/post/abcdefghijklmn/</id>
+        <link href="https://puguolin.Github.io/post/abcdefghijklmn/">
+        </link>
+        <updated>2020-03-21T06:44:23.000Z</updated>
+        <content type="html"><![CDATA[<p>a</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[java 多态]]></title>
         <id>https://puguolin.Github.io/post/java-duo-tai/</id>
@@ -256,98 +265,6 @@ public Text02
 <li>一个java源代码中可以定义多个class</li>
 <li>一个java源代码中public的class不是必须的</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[java接口]]></title>
-        <id>https://puguolin.Github.io/post/java-jie-kou/</id>
-        <link href="https://puguolin.Github.io/post/java-jie-kou/">
-        </link>
-        <updated>2020-03-21T06:07:11.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>接口就是多个类的公共规范</li>
-<li>接口是一种引用数据类型，最重要的内容就是其中的：抽象方法</li>
-<li></li>
-<li>如何定义一个接口：</li>
-</ul>
-<pre><code> public interface 接口名称{
-		//接口内容
- }
-</code></pre>
-<ul>
-<li>接口中可以包含的内容有常亮，抽象方法，默认方法，静态方法，私有方法</li>
-<li></li>
-<li>接口使用步骤：</li>
-<li>1.不能直接使用，必须有一个实现类来实现该接口</li>
-<li>格式：</li>
-</ul>
-<pre><code>	public class 实现类名称 implements 接口名称{//...}
-</code></pre>
-<ul>
-<li>2.接口的实现类必须覆盖重写（实现）接口所有的抽象方法</li>
-<li>实现：去掉abstract关键字，加上方法体的大括号</li>
-<li>注意：如果实现类并没有覆盖重写接口中所有抽象方法，那么这个实现类自己必须是抽象类</li>
-</ul>
-<pre><code>package Textinterface;
-/*
-* 接口就是多个类的公共规范
-* 接口是一种引用数据类型，最重要的内容就是其中的：抽象方法
-* 
-* 如何定义一个接口：
-* public interface 接口名称{
-*		//接口内容
-* }
-* 
-* 接口中可以包含的内容有常亮，抽象方法，默认方法，静态方法，私有方法
-* 
-* 接口使用步骤：
-* 1.不能直接使用，必须有一个实现类来实现该接口
-* 	格式：
-* 	public class 实现类名称 implements 接口名称{//...}
-* 2.接口的实现类必须覆盖重写（实现）接口所有的抽象方法
-* 实现：去掉abstract关键字，加上方法体的大括号
-* 注意：如果实现类并没有覆盖重写接口中所有抽象方法，那么这个实现类自己必须是抽象类
-*/
-public class text {
-
-   public static void main(String[] args) {
-   	// TODO 自动生成的方法存根
-   	MyinterfaceAbstractimpl myinterfaceAbstractimpl=new MyinterfaceAbstractimpl();
-   	myinterfaceAbstractimpl.methodAbs();
-   	myinterfaceAbstractimpl.methodAbs1();
-   }
-
-}
-</code></pre>
-<pre><code>package Textinterface;
-
-public class MyinterfaceAbstractimpl implements Interface01{
-
-   @Override
-   public void methodAbs() {
-   	// TODO 自动生成的方法存根
-   	System.out.println(&quot;第一个&quot;);
-   }
-
-   @Override
-   public void methodAbs1() {
-   	// TODO 自动生成的方法存根
-   	System.out.println(&quot;第二个&quot;);
-   }
-   
-}
-
-</code></pre>
-<pre><code>package Textinterface;
-
-public interface Interface01 {
-   //这是一个抽象方法
-   public abstract void methodAbs();
-   
-   //修饰符和抽象方法可以省略
-   void methodAbs1();
-}
-</code></pre>
 ]]></content>
     </entry>
 </feed>
