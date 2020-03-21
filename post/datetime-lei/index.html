@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title> DateTime类 | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584758614787">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="  提供了一些常用的日期时间与属性，该类属于system命名空间
+  以当前日期时间为参照的操作，可以使用该类的Now属性及其方法
+
+日期时间类的属性的使用方法格式为：
+
+  DateTime.Now.方法名称(参数列表)
+
+
+日期时间类的..." />
+    <meta name="keywords" content="C#" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584758614787" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title"> DateTime类</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <p>  提供了一些常用的日期时间与属性，该类属于system命名空间</p>
+<p>  以当前日期时间为参照的操作，可以使用该类的Now属性及其方法</p>
+<ul>
+<li>日期时间类的属性的使用方法格式为：</li>
+<li>
+<pre><code>  DateTime.Now.方法名称(参数列表)
+</code></pre>
+</li>
+<li>日期时间类的Now属性的常用属性格式：</li>
+<li>
+<pre><code>  DateTime.Now.属性名称
+</code></pre>
+</li>
+</ul>
+<h4 id="正则表达式是一种用来描述一定数量的文本格式">正则表达式是一种用来描述一定数量的文本格式</h4>
+<p>常用的正则表达式符号表示:</p>
+<pre><code>- \d 0-9的数字
+- \D \d的补给(以所有的字符为全集，下同)，即所有非数字的字符
+- \w单词字符，值大小写字母，2-9，下划线
+- \W \w的补集
+- \s空白字符集，包括换行符\n，回车符\r，制表符\r，垂直制表符\v，换页符\f
+- \S \s的补集
+- .除换行符\n外的任意字符
+- [...]匹配[]内所列出的所有字符
+- [^...]匹配非[]内列出的字符
+</code></pre>
+<p>要求</p>
+<pre><code>验证输入字符是否为大写字母 ^[A-Z]+$
+验证小数是否正确 ^[0-9]+(.[0-9][2])?&amp;
+验证十分钟号码是否正确 (^\d[18]$)|(^\d[15])
+</code></pre>
+<h4 id="定位字符">定位字符</h4>
+<p>  定位字符代表一个虚的字符，它代表一个位置，也可以直观认为定位字符所代表的的是某个字符与字符间那个微小的间隙</p>
+<pre><code>- ^表示其后的字符必须位于字符串的开始处
+- $表示其后的字符必需位于字符串的结束处
+- \b匹配一个的单词的边界
+- \B匹配一个非单词的边界
+</code></pre>
+<h4 id="重复描述字符">重复描述字符</h4>
+<pre><code>- {n}匹配前面字符的n次
+- {n,}匹配前面字符的n次货多个n次
+- {n,m}匹配前面字符n次到m次
+- ？匹配前面的字符0或1次
+- +匹配前面字符1次或者多次
+- 匹配前面的字符0次或者余0次
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/O8fzvB9LZ/" class="tag">
+                    C#
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/cstringbiilder-lei/">
+                  <h3 class="post-title">
+                    C#StringBiilder类
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

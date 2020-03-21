@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>C# 多态性 | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584758614787">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="函数重载
+下面的程序演示了一个函数重载：
+public class test1
+{
+    public int Add(int a)
+    {
+        return a;
+    }
+    public int Add(int..." />
+    <meta name="keywords" content="C#" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584758614787" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">C# 多态性</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <h4 id="函数重载">函数重载</h4>
+<p>下面的程序演示了一个函数重载：</p>
+<pre><code>public class test1
+{
+    public int Add(int a)
+    {
+        return a;
+    }
+    public int Add(int a,int b)
+    {
+        return a+b;
+    }
+}
+public class text2
+{
+    public static void main(String[] args)
+    {
+        test1 t=new texr1();
+        int add1=t.Add(1);
+        int add2=t.Add(2,3);
+        
+        Console.WriteLine(&quot;add1=&quot;+add1);
+        Console.WriteLine(&quot;add2=&quot;+add2);
+    }
+}
+</code></pre>
+<p>运行结果为：</p>
+<pre><code>add1=1
+add2=5
+</code></pre>
+<h4 id="抽象类">抽象类</h4>
+<p>下面的程序演示了一个抽象类：</p>
+<pre><code> abstract class Shape
+   {
+       abstract public int area();
+   }
+   class Rectangle:  Shape
+   {
+      private int length;
+      private int width;
+      public Rectangle( int a=0, int b=0)
+      {
+         length = a;
+         width = b;
+      }
+      public override int area ()
+      { 
+         Console.WriteLine(&quot;Rectangle 类的面积：&quot;);
+         return (width * length); 
+      }
+   }
+
+   class RectangleTester
+   {
+      static void Main(string[] args)
+      {
+         Rectangle r = new Rectangle(10, 7);
+         double a = r.area();
+         Console.WriteLine(&quot;面积： {0}&quot;,a);
+         Console.ReadKey();
+      }
+   }
+
+</code></pre>
+<p>运行结果为：</p>
+<pre><code>Rectangle 类的面积：
+面积： 70
+</code></pre>
+<p>  当有一个定义在类中的函数需要在继承类中实现时，可以使用虚方法。<br>
+虚方法是使用关键字 virtual 声明的。<br>
+虚方法可以在不同的继承类中有不同的实现。<br>
+对虚方法的调用是在运行时发生的。<br>
+动态多态性是通过 抽象类 和 虚方法 实现的。<br>
+以下实例创建了 Shape 基类，并创建派生类 Circle、 Rectangle、Triangle， Shape 类提供一个名为 Draw 的虚拟方法，在每个派生类中重写该方法以绘制该类的指定形状。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/O8fzvB9LZ/" class="tag">
+                    C#
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/c-ji-cheng/">
+                  <h3 class="post-title">
+                    C# 继承
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

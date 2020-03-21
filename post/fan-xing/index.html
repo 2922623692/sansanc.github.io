@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>泛型 | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584758614787">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="- 泛型,通过参数化类型来实现在同-份代码上操作多种数据类型。
+- 0泛型编程是一种编程范式，它利用&quot;参数化类型”将类型抽象化，从而实现更为灵活的复用。
+
+- C#泛型赋予了代码更强的类型安全,更好的复用,更高的效率，更清晰的约束..." />
+    <meta name="keywords" content="C#" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584758614787" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">泛型</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <pre><code>- 泛型,通过参数化类型来实现在同-份代码上操作多种数据类型。
+- 0泛型编程是一种编程范式，它利用&quot;参数化类型”将类型抽象化，从而实现更为灵活的复用。
+
+- C#泛型赋予了代码更强的类型安全,更好的复用,更高的效率，更清晰的约束。
+- 泛型引入了类型参数化的概念,能够实现定义的泛型类和方法将一个或多个类型的指定,推迟到客户端代码声明并实例化该类或方法的时候。
+- 在编写其他客户端代码时使用的单个类,不会引入运行时强制转换或装箱操作的成本或风险。
+#### 特点
+
+- System.Collection.Generic命名空间
+- OList&lt;T&gt; : T类型对象的集合。
+- 0 Dictionary&lt;K,V&gt; : V类型的项与K类型的键值相关的集合。
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/O8fzvB9LZ/" class="tag">
+                    C#
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/stack-lei/">
+                  <h3 class="post-title">
+                    Stack类
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

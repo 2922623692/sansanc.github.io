@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>TreeView | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584758614787">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="树视图( TreeView )控件以树的方式显示数据项。TreeView控件的每个数据项都与一一个树结点( TreeNode )对象相关联。树结点可以包括其他的结点，这些结点称为子结点，这样就可以在TreeView控件中体现对象之间的层次关..." />
+    <meta name="keywords" content="C#窗体" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584758614787" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">TreeView</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <p>树视图( TreeView )控件以树的方式显示数据项。TreeView控件的每个数据项都与一一个树结点( TreeNode )对象相关联。树结点可以包括其他的结点，这些结点称为子结点，这样就可以在TreeView控件中体现对象之间的层次关系。</p>
+<ul>
+<li>Nodes属性:是TreeView控件的结点的集合。</li>
+<li>TopNode属性:可见的第一 个节点。</li>
+<li>ImageList属性:获取或设置包含树节点所使用的Image对象的<br>
+ImageList。</li>
+<li>SelectedNode属性:获取或设置当前在树视图控件中选定的节点。</li>
+<li>LabelEdit属性:获取或设置一个值，用以指示是否可以编辑树节点的标签文本</li>
+<li>AfterSelect事件: TreeView控件最常用的事件为AfterSelect事件，当更改TreeView控件中选定的内容时触发该事件。</li>
+</ul>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/6Y7L7lVqU/" class="tag">
+                    C#窗体
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/groupbox/">
+                  <h3 class="post-title">
+                    GroupBox
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

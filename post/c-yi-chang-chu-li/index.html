@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>C# 异常处理 | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584758614787">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="语法
+try
+{
+   // 引起异常的语句
+}
+catch( ExceptionName e1 )
+{
+   // 错误处理代码
+}
+catch( ExceptionName e2 )
+{
+   // 错误处理代码
+}
+catch( Ex..." />
+    <meta name="keywords" content="C#" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584758614787" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">C# 异常处理</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <h4 id="语法">语法</h4>
+<pre><code>try
+{
+   // 引起异常的语句
+}
+catch( ExceptionName e1 )
+{
+   // 错误处理代码
+}
+catch( ExceptionName e2 )
+{
+   // 错误处理代码
+}
+catch( ExceptionName eN )
+{
+   // 错误处理代码
+}
+finally
+{
+   // 要执行的语句
+</code></pre>
+<h4 id="c-中的异常类">C# 中的异常类</h4>
+<table>
+<thead>
+<tr>
+<th>异常类</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>System.IO.IOException</td>
+<td>处理 I/O 错误。</td>
+</tr>
+<tr>
+<td>System.IndexOutOfRangeException</td>
+<td>处理当方法指向超出范围的数组索引时生成的错误。</td>
+</tr>
+<tr>
+<td>System.ArrayTypeMismatchException</td>
+<td>处理当数组类型不匹配时生成的错误</td>
+</tr>
+<tr>
+<td>System.NullReferenceException</td>
+<td>处理当依从一个空对象时生成的错误</td>
+</tr>
+<tr>
+<td>System.DivideByZeroException</td>
+<td>处理当除以零时生成的错误。</td>
+</tr>
+<tr>
+<td>System.InvalidCastException</td>
+<td>处理在类型转换期间生成的错误。</td>
+</tr>
+<tr>
+<td>System.OutOfMemoryException</td>
+<td>处理空闲内存不足生成的错误</td>
+</tr>
+<tr>
+<td>System.StackOverflowException</td>
+<td>处理栈溢出生成的错误。</td>
+</tr>
+</tbody>
+</table>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/O8fzvB9LZ/" class="tag">
+                    C#
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/c-jie-kou-interface/">
+                  <h3 class="post-title">
+                    C# 接口（Interface）
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

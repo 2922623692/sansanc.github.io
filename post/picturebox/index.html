@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>PictureBox | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584758614787">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="又称图片框，常用于图形设计和图像处理应用程序，在该控件中可以加载的图像格式有: .bmp(位图)、.ico( 图标)、.wmf (图元)、JPEG和.GIF文件。
+
+lmage属性 :用来设置控件要 显示的图像。
+
+Bitmap bmp=n..." />
+    <meta name="keywords" content="C#窗体" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584758614787" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">PictureBox</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <p>又称图片框，常用于图形设计和图像处理应用程序，在该控件中可以加载的图像格式有: .bmp(位图)、.ico( 图标)、.wmf (图元)、JPEG和.GIF文件。</p>
+<ul>
+<li>lmage属性 :用来设置控件要 显示的图像。</li>
+</ul>
+<pre><code>Bitmap bmp=new Bitmap(图像文件名);
+pictyreBox对象名.image=bmp;
+pictureBox对象名.image=image.FromFile(图像名称);
+</code></pre>
+<ul>
+<li>SizeMode属性:图像的显示模式。
+<ul>
+<li>Normal :图像被置于PictureBox的左上角。如果图像比包含它的PictureBox大，则该图像将被剪裁掉。</li>
+<li>Stretchlmage : PictureBox中的图像被拉伸或收缩，以适合PictureBox 的大小。AutoSize :调整PictureBox大小，使其等于所包含的图像大小</li>
+<li>Centerlmage :如界PictureBox比图像大，则图像将居中显示。如果图像比PictureBox大，则区片将居于PictureBox中心，而外边缘将被剪裁掉。</li>
+<li>Zoom :图像大小按其原有的大小比例被增加或减小。</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/6Y7L7lVqU/" class="tag">
+                    C#窗体
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/listview/">
+                  <h3 class="post-title">
+                    ListView
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

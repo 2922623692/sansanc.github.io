@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://puguolin.Github.io</id>
+    <title>蒲某某的笔记</title>
+    <updated>2020-03-21T02:43:37.375Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://puguolin.Github.io"/>
+    <link rel="self" href="https://puguolin.Github.io/atom.xml"/>
+    <subtitle>蒲某某的笔记</subtitle>
+    <logo>https://puguolin.Github.io/images/avatar.png</logo>
+    <icon>https://puguolin.Github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, 蒲某某的笔记</rights>
+    <entry>
+        <title type="html"><![CDATA[ImageList]]></title>
+        <id>https://puguolin.Github.io/post/imagelist/</id>
+        <link href="https://puguolin.Github.io/post/imagelist/">
+        </link>
+        <updated>2020-03-21T02:37:11.000Z</updated>
+        <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>属性说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ColorDepth</td>
+<td>获取图像列表的颜色深度。</td>
+</tr>
+<tr>
+<td>Images</td>
+<td>获取此图像列表的magelit. magcollctiono</td>
+</tr>
+<tr>
+<td>ImageSize</td>
+<td>获取或设置图像列表中的图像大小。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Images属性是最重要的属性之一， 可以使用[ 属性]面板中lmages属性右侧进入[图像集合编辑器]对话框，通过[添加]按钮进行图像的添加,也可以使用Images属性的Add方法可以编程方式添加图像。</li>
+<li>使用Remove方法可以移除单个图像，使用Clear方法可以清除图像列表中的所有图像,使用RemoveByKey方法可以按图像的键移除单个图像。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PictureBox]]></title>
+        <id>https://puguolin.Github.io/post/picturebox/</id>
+        <link href="https://puguolin.Github.io/post/picturebox/">
+        </link>
+        <updated>2020-03-21T02:36:49.000Z</updated>
+        <content type="html"><![CDATA[<p>又称图片框，常用于图形设计和图像处理应用程序，在该控件中可以加载的图像格式有: .bmp(位图)、.ico( 图标)、.wmf (图元)、JPEG和.GIF文件。</p>
+<ul>
+<li>lmage属性 :用来设置控件要 显示的图像。</li>
+</ul>
+<pre><code>Bitmap bmp=new Bitmap(图像文件名);
+pictyreBox对象名.image=bmp;
+pictureBox对象名.image=image.FromFile(图像名称);
+</code></pre>
+<ul>
+<li>SizeMode属性:图像的显示模式。
+<ul>
+<li>Normal :图像被置于PictureBox的左上角。如果图像比包含它的PictureBox大，则该图像将被剪裁掉。</li>
+<li>Stretchlmage : PictureBox中的图像被拉伸或收缩，以适合PictureBox 的大小。AutoSize :调整PictureBox大小，使其等于所包含的图像大小</li>
+<li>Centerlmage :如界PictureBox比图像大，则图像将居中显示。如果图像比PictureBox大，则区片将居于PictureBox中心，而外边缘将被剪裁掉。</li>
+<li>Zoom :图像大小按其原有的大小比例被增加或减小。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ListView]]></title>
+        <id>https://puguolin.Github.io/post/listview/</id>
+        <link href="https://puguolin.Github.io/post/listview/">
+        </link>
+        <updated>2020-03-21T02:36:17.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>列表视图允许以5种视图( View )显示条目。( 大图标、小图标、列表、平铺和详细资料).</li>
+<li>ListView包含一个ListViewltems集合。 ListViewltems允许设置一 个用于显示的Text属性,它的另一个属性Subltems包含在详细视图中显示的文本。</li>
+</ul>
+<h2 id="listview属性方法事件">listView(属性方法事件)</h2>
+<ul>
+<li>View属性:获取或设置项在控件中的显示方式。</li>
+<li>FullRowSelectView属性:该值指示单击某项是否选择其所有子项。</li>
+<li>ColumnsView属性:获取控件中显示的所有列标题的集合</li>
+<li>GroupsView属性:获取分配给控件的ListViewGroup对象的集合。</li>
+<li>Items属性:获取包含控件中所有项的集合。</li>
+<li>MultiSelect属性 :获取或设置一个值，该值指示是否可以选择多个项。</li>
+<li>HideSelection属性:获取或设置一个值，该值指示当控件没有焦点时，该控件中选定的项是否保持突出显示。</li>
+<li>SelectedIndices属性 :获取控件中选定项的索引。</li>
+<li>Selectedltems属性 :获取在控件中选定的项。</li>
+<li>Clear方法:从控件中移除所有项和列。</li>
+<li>sort方法：对列表视图的项进行排序</li>
+<li>Arrangelcons方法 :当控件中的项显示为图标时,对其进行排列。</li>
+<li>EnsureVisible方法 :确保指定项在控件中是可见的，必要时滚动控件的内容。</li>
+<li>BeginUpdate、EndUpdate方法 :挂起、回复控件的重绘。</li>
+<li>AfterLabelEdit. BeforeLabelEdit事件 :当用户编辑项的标签之后、前发生。* SelectedIndexChanged事件:当SelectedIndices集合更改时发生。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TreeView]]></title>
+        <id>https://puguolin.Github.io/post/treeview/</id>
+        <link href="https://puguolin.Github.io/post/treeview/">
+        </link>
+        <updated>2020-03-21T02:35:57.000Z</updated>
+        <content type="html"><![CDATA[<p>树视图( TreeView )控件以树的方式显示数据项。TreeView控件的每个数据项都与一一个树结点( TreeNode )对象相关联。树结点可以包括其他的结点，这些结点称为子结点，这样就可以在TreeView控件中体现对象之间的层次关系。</p>
+<ul>
+<li>Nodes属性:是TreeView控件的结点的集合。</li>
+<li>TopNode属性:可见的第一 个节点。</li>
+<li>ImageList属性:获取或设置包含树节点所使用的Image对象的<br>
+ImageList。</li>
+<li>SelectedNode属性:获取或设置当前在树视图控件中选定的节点。</li>
+<li>LabelEdit属性:获取或设置一个值，用以指示是否可以编辑树节点的标签文本</li>
+<li>AfterSelect事件: TreeView控件最常用的事件为AfterSelect事件，当更改TreeView控件中选定的内容时触发该事件。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GroupBox]]></title>
+        <id>https://puguolin.Github.io/post/groupbox/</id>
+        <link href="https://puguolin.Github.io/post/groupbox/">
+        </link>
+        <updated>2020-03-21T02:35:37.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>GroupBox控件又称为分组框，该控件常用于为其他控件提供可识别的分组，其典型的用法之一就是给RadioButton控件分组</li>
+<li>通过分组框的Text属性为分组框中的控件向用户提供提示信息。位于<br>
+分组框中的所有控件随着分组框的移动而一起移动,随着分组框的删除而全部删除。分组框的Visible属性和Enabled属性也会影响到分组框中的所有控件。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TrackBar]]></title>
+        <id>https://puguolin.Github.io/post/trackbar/</id>
+        <link href="https://puguolin.Github.io/post/trackbar/">
+        </link>
+        <updated>2020-03-21T02:35:15.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Maximum、Minimum属性 : TrackBar控件可表示的上限和下限值。</li>
+<li>0rientation属性:该值指示跟踪条是在水平方向还是在垂直方向。</li>
+<li>argeChange属性:滑块长距离移动时应为Value属性中加上或减去的值</li>
+<li>SmallChange属性:滑块短距离移动时对Value属性进行增减的值0 Value属性:用来获取或设置滑块在跟踪条控件上的当前位置的值0 TickFrequency属性:该值指定控件上绘制的刻度之间的增量0 TickStyle属性:该值指示如何显示跟踪条上的刻度线。</li>
+<li>ValueChanged事件:事件在Value属性值改变时发生</li>
+<li>Scrol事件:滚动滑块时发生。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NumericUpDown]]></title>
+        <id>https://puguolin.Github.io/post/numericupdown/</id>
+        <link href="https://puguolin.Github.io/post/numericupdown/">
+        </link>
+        <updated>2020-03-21T02:34:49.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Value属性:控件当前代表的数字。</li>
+<li>Increment属性:获取或设置单击向上或向下按钮时，该控件递增或递减的值。</li>
+<li>Maximum、Minimum属性:获取或设置该控件的最大值、最小值。</li>
+<li>ValueChanged事件:值改变时发生。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[date]]></title>
+        <id>https://puguolin.Github.io/post/date/</id>
+        <link href="https://puguolin.Github.io/post/date/">
+        </link>
+        <updated>2020-03-21T02:34:25.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>MaxDate、MinDate属性:获取或设置允许的最大日期和最小日期。</li>
+<li>SelectionStart、SelectionEnd属性 :获取或设置所选日期范围的开始日期和结束日期。</li>
+<li>SelectionRange属性:为月历控件获取或设置选定的日期范围。</li>
+<li>BoldedDates属性:获取或设置DateTime对象的数组，确定要以粗体显示的非周期性日期。</li>
+<li>AnnallyBoldedDates属性:获取或设置DateTime对象的数组,确定一年中要以粗体显示的日期。</li>
+<li>MaxSelectionCount属性:获取或设置月历控件中可选择的最大天数。</li>
+<li>DateChanged事件:当MonthCalendar中的所选日期更改时发生.2016年7月0 DateSelected事件:用户使用鼠标进行显式日期选择时发生。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ListBox]]></title>
+        <id>https://puguolin.Github.io/post/listbox/</id>
+        <link href="https://puguolin.Github.io/post/listbox/">
+        </link>
+        <updated>2020-03-21T02:34:05.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Items属性:用于存放列表框中的列表项，是一一个集合。通过该属性，可以添加列表项、移除列表项和获得列表项的数目。</li>
+<li>SelectionMode属性:获取或设置在ListBox中选择项所用的方法。</li>
+<li>SelectedIndex属性:用来获取或设置当前选定项的索引值( int)。</li>
+<li>SelectedIndices获取一个集合,该集合包含ListBox中所有当前选定项的从零开始的索引。</li>
+<li>Selectedltem属性:获取或设置ListBox中的当前选定项( object )。</li>
+<li>Selectedltems属性:获取包含ListBox中所有当前选定项的集合</li>
+<li>ltems.Count属性:该属性用来返回列表项的数目。</li>
+<li>SelectedIndexChanged事件:选择的选项发生改变时发生。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CheckedListBox]]></title>
+        <id>https://puguolin.Github.io/post/checkedlistbox/</id>
+        <link href="https://puguolin.Github.io/post/checkedlistbox/">
+        </link>
+        <updated>2020-03-21T02:33:44.000Z</updated>
+        <content type="html"><![CDATA[<p>又称复选列表框，它扩展了ListBox控件，它几乎能完成列表框可以完成的所有任务，并且还可以在列表项旁边显示复选标记。</p>
+<p>除具有列表框的全部属性外(但不能多选)，它还具有以下属性。</p>
+<ul>
+<li>CheckOnClick属性:获取或设置一个值，该值指示当某项被选定时是否应切换左侧的复选框。如果立即切换选中标记，则该属性值为true ;否则为false。默认值为false.</li>
+<li>Checkedltems属性:该属性是复选列表框中选中项的集合，只代表处于CheckState. Checked或CheckState.Indeterminate状态的那些项。该集合中的索弓 |按升序排列。</li>
+<li>CheckedIndices属性:该属性代表选中项(处于选中状态或中间状态的那些项)索可l的集合。</li>
+<li>ItemCheck事件:在选项Checked属性将要改变时发生。</li>
+</ul>
+]]></content>
+    </entry>
+</feed>

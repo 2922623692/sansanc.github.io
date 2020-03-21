@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Textbox | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584758614787">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+让文本允许多行 MultiLine属性设置为true即可
+让文本右侧出现滚动滑块scrollBars属性 设置为Both（超出时显示）vertical（只显示垂直滑块，只有设置Dock属性后才会出现横向滑块）
+需要文本只读，设置reado..." />
+    <meta name="keywords" content="C#窗体" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584758614787" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Textbox</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <ul>
+<li>让文本允许多行 MultiLine属性设置为true即可</li>
+<li>让文本右侧出现滚动滑块scrollBars属性 设置为Both（超出时显示）vertical（只显示垂直滑块，只有设置Dock属性后才会出现横向滑块）</li>
+<li>需要文本只读，设置readonly为true
+<ul>
+<li>与enable的区别
+<ul>
+<li>readonly允许复制内容，enadle不允许</li>
+<li>vs可以直观看见编程灰色，en只有运行后才可以看见</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="事件">事件</h4>
+<ul>
+<li>textChanged事件获取的是文本框的内容，并且每次按钮触发的单独内容。</li>
+</ul>
+<pre><code>string str=text1.text;
+text2.text=str+&quot;\r\n&quot;//第二个文本框获得第一个1内容（文本等于输入的）
+</code></pre>
+<pre><code>string str=text1.text;
+text2.AppendText(str);//追加字符串
+</code></pre>
+<pre><code>string str=text1.text;
+text2.AppendText(str+&quot;长度&quot;+text1.TextLength.ToString()+&quot;\r\n&quot;)
+</code></pre>
+<ul>
+<li>TextChanged事件获取的是文本框的所有内容，并非每次按键触发的单独内容。
+<ul>
+<li>
+<p>AppendText的方法：追加文本，在末尾追加新的数据</p>
+</li>
+<li>
+<p>TextLength当前文本内容的长度（个数）</p>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/6Y7L7lVqU/" class="tag">
+                    C#窗体
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/cchuang-ti-mo-ren-she-zhi/">
+                  <h3 class="post-title">
+                    c#窗体默认设置
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

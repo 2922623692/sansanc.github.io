@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>下拉列表框 CoboBox | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584758614787">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="赋值
+
+通过三角标志或者index进行赋值
+
+选择第n项
+cmb.SelectedIndex=n-1;//选择第n项
+
+cmb.SelectedIndex = cmb.Items.Count - 1;//选择末尾
+
+绑定数据
+text属性获..." />
+    <meta name="keywords" content="C#窗体" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584758614787" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">下拉列表框 CoboBox</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <h4 id="赋值">赋值</h4>
+<ul>
+<li>通过三角标志或者index进行赋值</li>
+</ul>
+<h4 id="选择第n项">选择第n项</h4>
+<pre><code>cmb.SelectedIndex=n-1;//选择第n项
+
+cmb.SelectedIndex = cmb.Items.Count - 1;//选择末尾
+</code></pre>
+<h4 id="绑定数据">绑定数据</h4>
+<p>text属性获取的数据为控件显示的内容</p>
+<pre><code>private void button_click(object sender,EventArgs e)
+{
+string text=cmb.Text;
+}
+</code></pre>
+<p>Selecteditem是获取当前选择的对象</p>
+<pre><code>private void button_click(object sender,EventArgs e)
+{
+//object obj=cmb.SelectedItem;
+string obj=cmb.SelectedItem.ToString();
+}
+
+</code></pre>
+<h4 id="通过数组赋值初始化器方法">通过数组赋值（初始化器方法）</h4>
+<p>方法一：</p>
+<pre><code>private void form_load(obiect sender,EventSrgs e)
+{
+    cmb.items.Add(&quot;一&quot;);
+    cmb.items.Add(&quot;二&quot;);
+}
+</code></pre>
+<p>方法二：</p>
+<pre><code>/*private void form_load(object sender,EventArgs e)
+{
+    cmb.Items.AddRange(new string[]{&quot;一&quot;,&quot;二&quot;,&quot;三&quot;})
+}*/
+private void form_load(object sender,EventArgs e)
+{
+    string[] strs=new string[] {&quot;一&quot;,&quot;二&quot;,&quot;三&quot;}
+}
+</code></pre>
+<h4 id="属性">属性</h4>
+<ul>
+<li>text 文本框文本</li>
+<li>items 列表项集合</li>
+<li>DropDownHeight设置高度</li>
+<li>DropDownWidth设置宽度</li>
+<li><strong>DropdownStyle —&gt;DropDown选型完全展示</strong></li>
+<li><strong>DropDownStyle -&gt;DropDownlist不可修改的选项</strong></li>
+<li>注意：<strong>当前DropDownStyle为Deopdown时，可以更改下拉框的内容，那么将会使用SelectedItem的null异常.为了避免用户修改，我们一般会设置如果当DropDownList</strong></li>
+</ul>
+<h4 id="案例联动利用selectedindexchanged">案例：联动（利用SelectedIndexChanged）</h4>
+<p>获取cmb1选项的数据</p>
+<p>然后设置cmb2选项的项目</p>
+<pre><code>private void cmb1_SelectedIndchanged(object sender,EventArgs e)
+{
+    cmb2.SelectedIndex=cmb1.SelectedIndex;
+}
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/6Y7L7lVqU/" class="tag">
+                    C#窗体
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/textbox/">
+                  <h3 class="post-title">
+                    Textbox
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

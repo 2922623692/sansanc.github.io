@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>ListView | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584758614787">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+列表视图允许以5种视图( View )显示条目。( 大图标、小图标、列表、平铺和详细资料).
+ListView包含一个ListViewltems集合。 ListViewltems允许设置一 个用于显示的Text属性,它的另一个属性Subl..." />
+    <meta name="keywords" content="C#窗体" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584758614787" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">ListView</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <ul>
+<li>列表视图允许以5种视图( View )显示条目。( 大图标、小图标、列表、平铺和详细资料).</li>
+<li>ListView包含一个ListViewltems集合。 ListViewltems允许设置一 个用于显示的Text属性,它的另一个属性Subltems包含在详细视图中显示的文本。</li>
+</ul>
+<h2 id="listview属性方法事件">listView(属性方法事件)</h2>
+<ul>
+<li>View属性:获取或设置项在控件中的显示方式。</li>
+<li>FullRowSelectView属性:该值指示单击某项是否选择其所有子项。</li>
+<li>ColumnsView属性:获取控件中显示的所有列标题的集合</li>
+<li>GroupsView属性:获取分配给控件的ListViewGroup对象的集合。</li>
+<li>Items属性:获取包含控件中所有项的集合。</li>
+<li>MultiSelect属性 :获取或设置一个值，该值指示是否可以选择多个项。</li>
+<li>HideSelection属性:获取或设置一个值，该值指示当控件没有焦点时，该控件中选定的项是否保持突出显示。</li>
+<li>SelectedIndices属性 :获取控件中选定项的索引。</li>
+<li>Selectedltems属性 :获取在控件中选定的项。</li>
+<li>Clear方法:从控件中移除所有项和列。</li>
+<li>sort方法：对列表视图的项进行排序</li>
+<li>Arrangelcons方法 :当控件中的项显示为图标时,对其进行排列。</li>
+<li>EnsureVisible方法 :确保指定项在控件中是可见的，必要时滚动控件的内容。</li>
+<li>BeginUpdate、EndUpdate方法 :挂起、回复控件的重绘。</li>
+<li>AfterLabelEdit. BeforeLabelEdit事件 :当用户编辑项的标签之后、前发生。* SelectedIndexChanged事件:当SelectedIndices集合更改时发生。</li>
+</ul>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/6Y7L7lVqU/" class="tag">
+                    C#窗体
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/treeview/">
+                  <h3 class="post-title">
+                    TreeView
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
