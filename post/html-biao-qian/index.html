@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>html标签 | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584760852038">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="&lt;html&gt;&lt;/html&gt;  根目录
+&lt;head&gt;&lt;/head&gt; 文档的头部
+&lt;title&gt;&lt;/title&gt; 文档的标题
+&lt;boby&gt;&lt;/boby&g..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584760852038" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">html标签</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <pre><code>&lt;html&gt;&lt;/html&gt;  根目录
+&lt;head&gt;&lt;/head&gt; 文档的头部
+&lt;title&gt;&lt;/title&gt; 文档的标题
+&lt;boby&gt;&lt;/boby&gt; 文档的主题
+</code></pre>
+<h4 id="标题标签">标题标签：</h4>
+<pre><code>&lt;h1&gt;—&lt;h6&gt;
+</code></pre>
+<h4 id="段落标签">段落标签:</h4>
+<pre><code>&lt;p&gt;&lt;/p&gt;
+</code></pre>
+<h4 id="换行标签">换行标签：</h4>
+<pre><code>&lt;br&gt;&lt;/br&gt;
+</code></pre>
+<h4 id="文本格式化">文本格式化：</h4>
+<pre><code>&lt;stong&gt;&lt;/stong&gt; 加粗 或者 &lt;b&gt;&lt;/b&gt;
+&lt;em&gt;&lt;em&gt; 倾斜]
+&lt;del&gt;&lt;/del&gt; 删除线
+&lt;ins&gt;&lt;/ins&gt; 下划线
+</code></pre>
+<h4 id="div和span标签"><div>和<span>标签:</h4>
+<pre><code>&lt;div&gt;&lt;/div&gt; 分割，分区
+&lt;span&gt;&lt;/sapn&gt;  跨行，跨度
+</code></pre>
+<p>####图像标签：</p>
+<pre><code>&lt;img src=&quot;图像url&quot;&gt;
+</code></pre>
+<pre><code>* alt 替换文本，图像显示不出来时用文字替代
+* title 将鼠标放在个上，显示文字
+* boede 给图像设置边框
+</code></pre>
+<h5 id="创建分区响应图">创建分区响应图:</h5>
+<pre><code>rect代表一个矩形 四个逗号组成 分别是左上右下
+circle 代表一个圆形 上逗号 圆心的x 圆心的y  半径
+poly 多边形 至少六个逗号 
+dafault 默认整张图片
+</code></pre>
+<pre><code>&lt;img src=&quot;图片地址&quot; width=&quot;长度&quot; usemap=&quot;#定义名字&quot;&gt;
+	&lt;map name=&quot;定义的名字&quot;&gt;
+		&lt;area herf=&quot;跳转地址&quot; shape=&quot;rect/circle/poly/dafault&quot; coords=&quot;&quot; harget=&quot;_blank&quot;&gt;
+	&lt;/map&gt;
+</code></pre>
+<h4 id="超链接标签">超链接标签：</h4>
+<pre><code>&lt;a href=&quot;跳转路劲&quot; taget=&quot;窗口弹出方式&quot;&gt;&lt;/a&gt;
+</code></pre>
+<ul>
+<li>taget：_self 默认值  _blank在新窗口中打开</li>
+<li>分类：多部，内部，空，下载链接</li>
+</ul>
+<h4 id="锚点标签">锚点标签：</h4>
+<pre><code>&lt;a href=&quot;#two&quot;&gt;A&lt;/a&gt;
+&lt;h3 id=&quot;two&quot;&gt;B&lt;/h3&gt;
+</code></pre>
+<h4 id="表格标签">表格标签：</h4>
+<pre><code>&lt;table&gt;&lt;tr&gt;...&lt;/tr&gt;&lt;/table&gt;
+</code></pre>
+<pre><code>* &lt;rable&gt;&lt;/rable&gt; 定义表格标签
+* &lt;tr&gt;&lt;/tr&gt; 定义表格行
+* &lt;td&gt;&lt;/td&gt; 定义表格列
+* &lt;th&gt;&lt;/th&gt; 标题单元格 居中加粗
+</code></pre>
+<h4 id="表格属性">表格属性：</h4>
+<pre><code>* broder(&quot;1&quot;有边框，&quot; &quot;没有边框)
+* cellpading（默认为1像素）
+* cellspacing（规定单元格之间的距离）
+* width（规定表格宽度）
+</code></pre>
+<h4 id="表格结构标签">表格结构标签：</h4>
+<pre><code>* &lt;thead&gt;&lt;/thead&gt;定义表格头部区域
+* &lt;tbody&gt;&lt;/tbody&gt;定义表格主体
+</code></pre>
+<h4 id="合并单元格">合并单元格:</h4>
+<pre><code>rowspan 跨行合并
+colspan 跨列合并
+</code></pre>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/cshu-ju-lei-xing/">
+                  <h3 class="post-title">
+                    c#数据类型
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
