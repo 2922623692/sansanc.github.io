@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://puguolin.Github.io</id>
     <title>蒲某某的笔记</title>
-    <updated>2020-03-21T05:00:50.251Z</updated>
+    <updated>2020-03-21T05:47:42.430Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://puguolin.Github.io"/>
     <link rel="self" href="https://puguolin.Github.io/atom.xml"/>
@@ -11,301 +11,187 @@
     <icon>https://puguolin.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 蒲某某的笔记</rights>
     <entry>
-        <title type="html"><![CDATA[html标签]]></title>
-        <id>https://puguolin.Github.io/post/html-biao-qian/</id>
-        <link href="https://puguolin.Github.io/post/html-biao-qian/">
+        <title type="html"><![CDATA[块级元素]]></title>
+        <id>https://puguolin.Github.io/post/kuai-ji-yuan-su/</id>
+        <link href="https://puguolin.Github.io/post/kuai-ji-yuan-su/">
         </link>
-        <updated>2020-03-21T03:01:30.000Z</updated>
-        <content type="html"><![CDATA[<pre><code>&lt;html&gt;&lt;/html&gt;  根目录
-&lt;head&gt;&lt;/head&gt; 文档的头部
-&lt;title&gt;&lt;/title&gt; 文档的标题
-&lt;boby&gt;&lt;/boby&gt; 文档的主题
-</code></pre>
-<h4 id="标题标签">标题标签：</h4>
-<pre><code>&lt;h1&gt;—&lt;h6&gt;
-</code></pre>
-<h4 id="段落标签">段落标签:</h4>
-<pre><code>&lt;p&gt;&lt;/p&gt;
-</code></pre>
-<h4 id="换行标签">换行标签：</h4>
-<pre><code>&lt;br&gt;&lt;/br&gt;
-</code></pre>
-<h4 id="文本格式化">文本格式化：</h4>
-<pre><code>&lt;stong&gt;&lt;/stong&gt; 加粗 或者 &lt;b&gt;&lt;/b&gt;
-&lt;em&gt;&lt;em&gt; 倾斜]
-&lt;del&gt;&lt;/del&gt; 删除线
-&lt;ins&gt;&lt;/ins&gt; 下划线
-</code></pre>
-<h4 id="div和span标签"><div>和<span>标签:</h4>
-<pre><code>&lt;div&gt;&lt;/div&gt; 分割，分区
-&lt;span&gt;&lt;/sapn&gt;  跨行，跨度
-</code></pre>
-<p>####图像标签：</p>
-<pre><code>&lt;img src=&quot;图像url&quot;&gt;
-</code></pre>
-<pre><code>* alt 替换文本，图像显示不出来时用文字替代
-* title 将鼠标放在个上，显示文字
-* boede 给图像设置边框
-</code></pre>
-<h5 id="创建分区响应图">创建分区响应图:</h5>
-<pre><code>rect代表一个矩形 四个逗号组成 分别是左上右下
-circle 代表一个圆形 上逗号 圆心的x 圆心的y  半径
-poly 多边形 至少六个逗号 
-dafault 默认整张图片
-</code></pre>
-<pre><code>&lt;img src=&quot;图片地址&quot; width=&quot;长度&quot; usemap=&quot;#定义名字&quot;&gt;
-	&lt;map name=&quot;定义的名字&quot;&gt;
-		&lt;area herf=&quot;跳转地址&quot; shape=&quot;rect/circle/poly/dafault&quot; coords=&quot;&quot; harget=&quot;_blank&quot;&gt;
-	&lt;/map&gt;
-</code></pre>
-<h4 id="超链接标签">超链接标签：</h4>
-<pre><code>&lt;a href=&quot;跳转路劲&quot; taget=&quot;窗口弹出方式&quot;&gt;&lt;/a&gt;
-</code></pre>
+        <updated>2020-03-21T05:40:30.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="块级元素">块级元素</h2>
 <ul>
-<li>taget：_self 默认值  _blank在新窗口中打开</li>
-<li>分类：多部，内部，空，下载链接</li>
+<li>会计元素是组成内容的主要部分</li>
+<li>会计元素总是从新行开始，并且该行上下都添加了一些空间，高度宽度都是可以设置的。</li>
 </ul>
-<h4 id="锚点标签">锚点标签：</h4>
-<pre><code>&lt;a href=&quot;#two&quot;&gt;A&lt;/a&gt;
-&lt;h3 id=&quot;two&quot;&gt;B&lt;/h3&gt;
-</code></pre>
-<h4 id="表格标签">表格标签：</h4>
-<pre><code>&lt;table&gt;&lt;tr&gt;...&lt;/tr&gt;&lt;/table&gt;
-</code></pre>
-<pre><code>* &lt;rable&gt;&lt;/rable&gt; 定义表格标签
-* &lt;tr&gt;&lt;/tr&gt; 定义表格行
-* &lt;td&gt;&lt;/td&gt; 定义表格列
-* &lt;th&gt;&lt;/th&gt; 标题单元格 居中加粗
-</code></pre>
-<h4 id="表格属性">表格属性：</h4>
-<pre><code>* broder(&quot;1&quot;有边框，&quot; &quot;没有边框)
-* cellpading（默认为1像素）
-* cellspacing（规定单元格之间的距离）
-* width（规定表格宽度）
-</code></pre>
-<h4 id="表格结构标签">表格结构标签：</h4>
-<pre><code>* &lt;thead&gt;&lt;/thead&gt;定义表格头部区域
-* &lt;tbody&gt;&lt;/tbody&gt;定义表格主体
-</code></pre>
-<h4 id="合并单元格">合并单元格:</h4>
-<pre><code>rowspan 跨行合并
-colspan 跨列合并
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[c#数据类型]]></title>
-        <id>https://puguolin.Github.io/post/cshu-ju-lei-xing/</id>
-        <link href="https://puguolin.Github.io/post/cshu-ju-lei-xing/">
-        </link>
-        <updated>2020-03-21T02:55:01.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>1.值类型</strong></p>
 <table>
 <thead>
 <tr>
 <th>类型</th>
-<th>描述</th>
+<th>元素</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>bool</td>
-<td>布尔值</td>
+<td>标题</td>
+<td>h1~h5</td>
 </tr>
 <tr>
-<td>byte</td>
-<td>无符号整数</td>
+<td>段落</td>
+<td>p</td>
 </tr>
 <tr>
-<td>char</td>
-<td>字符型</td>
+<td>块（长）引用</td>
+<td>blockquote</td>
 </tr>
 <tr>
-<td>double</td>
-<td>双精度浮点型</td>
+<td>预格式（preformatted）文本</td>
+<td>pre</td>
 </tr>
 <tr>
-<td>float</td>
-<td>单精度浮点型</td>
+<td>各种列表元素</td>
+<td>ol，ul，li，dl，dt，dd</td>
 </tr>
 <tr>
-<td>int</td>
-<td>整形</td>
-</tr>
-<tr>
-<td>log</td>
-<td>有符号整形</td>
+<td>水平线</td>
+<td>hr</td>
 </tr>
 </tbody>
 </table>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ImageList]]></title>
-        <id>https://puguolin.Github.io/post/imagelist/</id>
-        <link href="https://puguolin.Github.io/post/imagelist/">
-        </link>
-        <updated>2020-03-21T02:37:11.000Z</updated>
-        <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>属性说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ColorDepth</td>
-<td>获取图像列表的颜色深度。</td>
-</tr>
-<tr>
-<td>Images</td>
-<td>获取此图像列表的magelit. magcollctiono</td>
-</tr>
-<tr>
-<td>ImageSize</td>
-<td>获取或设置图像列表中的图像大小。</td>
-</tr>
-</tbody>
-</table>
+<h2 id="blockquote">blockquote</h2>
 <ul>
-<li>Images属性是最重要的属性之一， 可以使用[ 属性]面板中lmages属性右侧进入[图像集合编辑器]对话框，通过[添加]按钮进行图像的添加,也可以使用Images属性的Add方法可以编程方式添加图像。</li>
-<li>使用Remove方法可以移除单个图像，使用Clear方法可以清除图像列表中的所有图像,使用RemoveByKey方法可以按图像的键移除单个图像。</li>
+<li>引用长文本时，特别是跨越多余四行的引用，应该使用blockquote元素</li>
+<li>之间的所有文本东会从常规文本分离出来，经常会在左，右两边进行缩进（怎家外边距），而且有时使用斜体。也就是说，块引用拥有他们自己的空间。</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PictureBox]]></title>
-        <id>https://puguolin.Github.io/post/picturebox/</id>
-        <link href="https://puguolin.Github.io/post/picturebox/">
-        </link>
-        <updated>2020-03-21T02:36:49.000Z</updated>
-        <content type="html"><![CDATA[<p>又称图片框，常用于图形设计和图像处理应用程序，在该控件中可以加载的图像格式有: .bmp(位图)、.ico( 图标)、.wmf (图元)、JPEG和.GIF文件。</p>
-<ul>
-<li>lmage属性 :用来设置控件要 显示的图像。</li>
-</ul>
-<pre><code>Bitmap bmp=new Bitmap(图像文件名);
-pictyreBox对象名.image=bmp;
-pictureBox对象名.image=image.FromFile(图像名称);
+<pre><code class="language-html">&lt;blockquote&gt;
+&lt;p&gt;here is a long quotation here is a long quotationg&lt;/p&gt;
+&lt;/blockquote&gt;
 </code></pre>
+<h2 id="per">per</h2>
 <ul>
-<li>SizeMode属性:图像的显示模式。
+<li>在pre元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。</li>
+<li>常用应用就是用来表示计算机的源代码。</li>
+</ul>
+<pre><code>&lt;pre&gt;
+html 
+head
+    body
+&lt;/pre&gt;
+</code></pre>
+<h2 id="hr">hr/</h2>
 <ul>
-<li>Normal :图像被置于PictureBox的左上角。如果图像比包含它的PictureBox大，则该图像将被剪裁掉。</li>
-<li>Stretchlmage : PictureBox中的图像被拉伸或收缩，以适合PictureBox 的大小。AutoSize :调整PictureBox大小，使其等于所包含的图像大小</li>
-<li>Centerlmage :如界PictureBox比图像大，则图像将居中显示。如果图像比PictureBox大，则区片将居于PictureBox中心，而外边缘将被剪裁掉。</li>
-<li>Zoom :图像大小按其原有的大小比例被增加或减小。</li>
-</ul>
-</li>
+<li>hr</li>
 </ul>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[ListView]]></title>
-        <id>https://puguolin.Github.io/post/listview/</id>
-        <link href="https://puguolin.Github.io/post/listview/">
+        <title type="html"><![CDATA[audio音频元素]]></title>
+        <id>https://puguolin.Github.io/post/audio-yin-pin-yuan-su/</id>
+        <link href="https://puguolin.Github.io/post/audio-yin-pin-yuan-su/">
         </link>
-        <updated>2020-03-21T02:36:17.000Z</updated>
+        <updated>2020-03-21T05:39:51.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>&lt;audio&gt;
+&lt;source src=&quot;音频地址&quot;&gt;
+&lt;/audio&gt;
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[video嵌入视频元素]]></title>
+        <id>https://puguolin.Github.io/post/video-qian-ru-shi-pin-yuan-su/</id>
+        <link href="https://puguolin.Github.io/post/video-qian-ru-shi-pin-yuan-su/">
+        </link>
+        <updated>2020-03-21T05:39:20.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>&lt;video src=&quot;视频地址&quot; heigth=&quot;高&quot; autoplay&gt;
+&lt;source src=&quot;视频地址.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;source src=&quot;视频地址.ogg&quot; type=&quot;video/ogg&quot;&gt;
+&lt;video&gt;
+</code></pre>
+<p>autoplay 网页自动播放<br>
+controls 播放控件<br>
+preload=&quot;&quot; (none 不加载，metadata只加载第一针，auto请求下载整个视频)预先载入视频<br>
+loop循环播放<br>
+poster=&quot;图片地址&quot; 视频载入时显示图片<br>
+muted 视频静音</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[<button></button>]]></title>
+        <id>https://puguolin.Github.io/post/lessbuttongreaterlessbuttongreater/</id>
+        <link href="https://puguolin.Github.io/post/lessbuttongreaterlessbuttongreater/">
+        </link>
+        <updated>2020-03-21T05:39:00.000Z</updated>
+        <content type="html"><![CDATA[<p>和js配合使用 绑定事件</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[标志对象内溢出文本 text-overflow]]></title>
+        <id>https://puguolin.Github.io/post/biao-zhi-dui-xiang-nei-yi-chu-wen-ben-text-overflow/</id>
+        <link href="https://puguolin.Github.io/post/biao-zhi-dui-xiang-nei-yi-chu-wen-ben-text-overflow/">
+        </link>
+        <updated>2020-03-21T05:38:32.000Z</updated>
+        <content type="html"><![CDATA[<p>clip 修剪溢出文本，不显示省略标记&quot;...&quot;<br>
+ellipsis 用省略标记&quot;...&quot;，标志被修剪文本</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[阴影效果 text-shadow]]></title>
+        <id>https://puguolin.Github.io/post/yin-ying-xiao-guo-text-shadow/</id>
+        <link href="https://puguolin.Github.io/post/yin-ying-xiao-guo-text-shadow/">
+        </link>
+        <updated>2020-03-21T05:37:56.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>(text-shadow: h-shadow v-shadow blur color;)
+例(text-shadow:10px(水平) 10px(垂直) 10px(阴影) rad)
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[空白符处理 white-space]]></title>
+        <id>https://puguolin.Github.io/post/kong-bai-fu-chu-li-white-space/</id>
+        <link href="https://puguolin.Github.io/post/kong-bai-fu-chu-li-white-space/">
+        </link>
+        <updated>2020-03-21T05:37:27.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>列表视图允许以5种视图( View )显示条目。( 大图标、小图标、列表、平铺和详细资料).</li>
-<li>ListView包含一个ListViewltems集合。 ListViewltems允许设置一 个用于显示的Text属性,它的另一个属性Subltems包含在详细视图中显示的文本。</li>
-</ul>
-<h2 id="listview属性方法事件">listView(属性方法事件)</h2>
-<ul>
-<li>View属性:获取或设置项在控件中的显示方式。</li>
-<li>FullRowSelectView属性:该值指示单击某项是否选择其所有子项。</li>
-<li>ColumnsView属性:获取控件中显示的所有列标题的集合</li>
-<li>GroupsView属性:获取分配给控件的ListViewGroup对象的集合。</li>
-<li>Items属性:获取包含控件中所有项的集合。</li>
-<li>MultiSelect属性 :获取或设置一个值，该值指示是否可以选择多个项。</li>
-<li>HideSelection属性:获取或设置一个值，该值指示当控件没有焦点时，该控件中选定的项是否保持突出显示。</li>
-<li>SelectedIndices属性 :获取控件中选定项的索引。</li>
-<li>Selectedltems属性 :获取在控件中选定的项。</li>
-<li>Clear方法:从控件中移除所有项和列。</li>
-<li>sort方法：对列表视图的项进行排序</li>
-<li>Arrangelcons方法 :当控件中的项显示为图标时,对其进行排列。</li>
-<li>EnsureVisible方法 :确保指定项在控件中是可见的，必要时滚动控件的内容。</li>
-<li>BeginUpdate、EndUpdate方法 :挂起、回复控件的重绘。</li>
-<li>AfterLabelEdit. BeforeLabelEdit事件 :当用户编辑项的标签之后、前发生。* SelectedIndexChanged事件:当SelectedIndices集合更改时发生。</li>
+<li>normal 文本空格，空行无效</li>
+<li>pro 预格式化</li>
+<li>nowrap 强制文档书写保留空格，不换行</li>
 </ul>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[TreeView]]></title>
-        <id>https://puguolin.Github.io/post/treeview/</id>
-        <link href="https://puguolin.Github.io/post/treeview/">
+        <title type="html"><![CDATA[textarea 文本域元素]]></title>
+        <id>https://puguolin.Github.io/post/textarea-wen-ben-yu-yuan-su/</id>
+        <link href="https://puguolin.Github.io/post/textarea-wen-ben-yu-yuan-su/">
         </link>
-        <updated>2020-03-21T02:35:57.000Z</updated>
-        <content type="html"><![CDATA[<p>树视图( TreeView )控件以树的方式显示数据项。TreeView控件的每个数据项都与一一个树结点( TreeNode )对象相关联。树结点可以包括其他的结点，这些结点称为子结点，这样就可以在TreeView控件中体现对象之间的层次关系。</p>
-<ul>
-<li>Nodes属性:是TreeView控件的结点的集合。</li>
-<li>TopNode属性:可见的第一 个节点。</li>
-<li>ImageList属性:获取或设置包含树节点所使用的Image对象的<br>
-ImageList。</li>
-<li>SelectedNode属性:获取或设置当前在树视图控件中选定的节点。</li>
-<li>LabelEdit属性:获取或设置一个值，用以指示是否可以编辑树节点的标签文本</li>
-<li>AfterSelect事件: TreeView控件最常用的事件为AfterSelect事件，当更改TreeView控件中选定的内容时触发该事件。</li>
-</ul>
+        <updated>2020-03-21T05:37:07.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>&lt;textarea rows=&quot;3&quot; cols=&quot;20&quot;&gt;
+文本内容
+&lt;/textarea&gt;
+</code></pre>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[GroupBox]]></title>
-        <id>https://puguolin.Github.io/post/groupbox/</id>
-        <link href="https://puguolin.Github.io/post/groupbox/">
+        <title type="html"><![CDATA[表单元素：]]></title>
+        <id>https://puguolin.Github.io/post/biao-dan-yuan-su/</id>
+        <link href="https://puguolin.Github.io/post/biao-dan-yuan-su/">
         </link>
-        <updated>2020-03-21T02:35:37.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>GroupBox控件又称为分组框，该控件常用于为其他控件提供可识别的分组，其典型的用法之一就是给RadioButton控件分组</li>
-<li>通过分组框的Text属性为分组框中的控件向用户提供提示信息。位于<br>
-分组框中的所有控件随着分组框的移动而一起移动,随着分组框的删除而全部删除。分组框的Visible属性和Enabled属性也会影响到分组框中的所有控件。</li>
-</ul>
+        <updated>2020-03-21T05:36:20.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="select-下拉表单元素">select 下拉表单元素</h4>
+<pre><code>&lt;select&gt;
+&lt;option&gt;选项1&lt;option&gt;
+&lt;/select&gt;
+</code></pre>
+<pre><code>在&lt;option&gt;中定义selected=&quot;selected&quot;时，当前项即为默认选中项
+</code></pre>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[TrackBar]]></title>
-        <id>https://puguolin.Github.io/post/trackbar/</id>
-        <link href="https://puguolin.Github.io/post/trackbar/">
+        <title type="html"><![CDATA[<laber>标签：]]></title>
+        <id>https://puguolin.Github.io/post/lesslabergreaterbiao-qian/</id>
+        <link href="https://puguolin.Github.io/post/lesslabergreaterbiao-qian/">
         </link>
-        <updated>2020-03-21T02:35:15.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Maximum、Minimum属性 : TrackBar控件可表示的上限和下限值。</li>
-<li>0rientation属性:该值指示跟踪条是在水平方向还是在垂直方向。</li>
-<li>argeChange属性:滑块长距离移动时应为Value属性中加上或减去的值</li>
-<li>SmallChange属性:滑块短距离移动时对Value属性进行增减的值0 Value属性:用来获取或设置滑块在跟踪条控件上的当前位置的值0 TickFrequency属性:该值指定控件上绘制的刻度之间的增量0 TickStyle属性:该值指示如何显示跟踪条上的刻度线。</li>
-<li>ValueChanged事件:事件在Value属性值改变时发生</li>
-<li>Scrol事件:滚动滑块时发生。</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NumericUpDown]]></title>
-        <id>https://puguolin.Github.io/post/numericupdown/</id>
-        <link href="https://puguolin.Github.io/post/numericupdown/">
-        </link>
-        <updated>2020-03-21T02:34:49.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Value属性:控件当前代表的数字。</li>
-<li>Increment属性:获取或设置单击向上或向下按钮时，该控件递增或递减的值。</li>
-<li>Maximum、Minimum属性:获取或设置该控件的最大值、最小值。</li>
-<li>ValueChanged事件:值改变时发生。</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[date]]></title>
-        <id>https://puguolin.Github.io/post/date/</id>
-        <link href="https://puguolin.Github.io/post/date/">
-        </link>
-        <updated>2020-03-21T02:34:25.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>MaxDate、MinDate属性:获取或设置允许的最大日期和最小日期。</li>
-<li>SelectionStart、SelectionEnd属性 :获取或设置所选日期范围的开始日期和结束日期。</li>
-<li>SelectionRange属性:为月历控件获取或设置选定的日期范围。</li>
-<li>BoldedDates属性:获取或设置DateTime对象的数组，确定要以粗体显示的非周期性日期。</li>
-<li>AnnallyBoldedDates属性:获取或设置DateTime对象的数组,确定一年中要以粗体显示的日期。</li>
-<li>MaxSelectionCount属性:获取或设置月历控件中可选择的最大天数。</li>
-<li>DateChanged事件:当MonthCalendar中的所选日期更改时发生.2016年7月0 DateSelected事件:用户使用鼠标进行显式日期选择时发生。</li>
-</ul>
+        <updated>2020-03-21T05:35:32.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="laber可以绑定表单元素"><laber>可以绑定表单元素</h4>
+<pre><code>&lt;laber for=&quot;sex&quot;&gt;男人&lt;/laber&gt;
+&lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;sex&quot;/&gt;
+</code></pre>
 ]]></content>
     </entry>
 </feed>

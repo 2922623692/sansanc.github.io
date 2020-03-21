@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>块级元素 | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584769658047">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="块级元素
+
+会计元素是组成内容的主要部分
+会计元素总是从新行开始，并且该行上下都添加了一些空间，高度宽度都是可以设置的。
+
+
+
+
+类型
+元素
+
+
+
+
+标题
+h1~h5
+
+
+段落
+p
+
+
+块（长）引用
+blockquote
+
+
+预格式（pre..." />
+    <meta name="keywords" content="html" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584769658047" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">块级元素</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="块级元素">块级元素</h2>
+<ul>
+<li>会计元素是组成内容的主要部分</li>
+<li>会计元素总是从新行开始，并且该行上下都添加了一些空间，高度宽度都是可以设置的。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>元素</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>标题</td>
+<td>h1~h5</td>
+</tr>
+<tr>
+<td>段落</td>
+<td>p</td>
+</tr>
+<tr>
+<td>块（长）引用</td>
+<td>blockquote</td>
+</tr>
+<tr>
+<td>预格式（preformatted）文本</td>
+<td>pre</td>
+</tr>
+<tr>
+<td>各种列表元素</td>
+<td>ol，ul，li，dl，dt，dd</td>
+</tr>
+<tr>
+<td>水平线</td>
+<td>hr</td>
+</tr>
+</tbody>
+</table>
+<h2 id="blockquote">blockquote</h2>
+<ul>
+<li>引用长文本时，特别是跨越多余四行的引用，应该使用blockquote元素</li>
+<li>之间的所有文本东会从常规文本分离出来，经常会在左，右两边进行缩进（怎家外边距），而且有时使用斜体。也就是说，块引用拥有他们自己的空间。</li>
+</ul>
+<pre><code class="language-html">&lt;blockquote&gt;
+&lt;p&gt;here is a long quotation here is a long quotationg&lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre>
+<h2 id="per">per</h2>
+<ul>
+<li>在pre元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。</li>
+<li>常用应用就是用来表示计算机的源代码。</li>
+</ul>
+<pre><code>&lt;pre&gt;
+html 
+head
+    body
+&lt;/pre&gt;
+</code></pre>
+<h2 id="hr">hr/</h2>
+<ul>
+<li>hr</li>
+</ul>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/2U54aynpl/" class="tag">
+                    html
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/audio-yin-pin-yuan-su/">
+                  <h3 class="post-title">
+                    audio音频元素
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>

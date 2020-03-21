@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>html表单元素 | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584769658047">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="imput：输入表单元素
+&lt;inputt type=&quot;属性值&quot; /&gt;
+
+type:
+button 定义点击按钮
+checkbox 定义复选框
+file 定义输入字段和浏览按钮提供文件上传和下载
+hidden ..." />
+    <meta name="keywords" content="html" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584769658047" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">html表单元素</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <h4 id="imput输入表单元素">imput：输入表单元素</h4>
+<pre><code>&lt;inputt type=&quot;属性值&quot; /&gt;
+</code></pre>
+<p>type:<br>
+button 定义点击按钮<br>
+checkbox 定义复选框<br>
+file 定义输入字段和浏览按钮提供文件上传和下载<br>
+hidden 定义隐藏的输入字段<br>
+image 定义图像形式的提交按钮<br>
+password 定义密码字段<br>
+radio 定义单选按钮<br>
+reset 定义重置按钮<br>
+submit 定义提交按钮<br>
+text 定义单行输入字段，文本<br>
+range 滑动输入类型<br>
+number 手动输入值包含range属性1<br>
+input：</p>
+<pre><code>    Email &lt;input type=&quot;email&quot;&gt; 验证电子邮件地址
+    Tel&lt;input type=&quot;tel&quot;&gt;验证电话号码
+    url&lt;input type=&quot;url&quot;&gt;验证url完整度
+</code></pre>
+<p>input元素获取时间</p>
+<pre><code>   &lt;input type=&quot;date&quot;&gt;
+</code></pre>
+<p>input元素获取颜色</p>
+<pre><code>    &lt;input type=&quot;color&quot;&gt;
+</code></pre>
+<p>input元素获取搜索用词</p>
+<pre><code>    &lt;input type=&quot;search&quot;&gt;
+</code></pre>
+<p>input元素获得隐藏数据</p>
+<pre><code>    &lt;input type=&quot;hidden&quot;&gt;
+</code></pre>
+<p>input元素生成图像按钮</p>
+<pre><code>    &lt;input type=&quot;image&quot; src=&quot;图像地址&quot; width=&quot;长&quot;&gt;
+</code></pre>
+<p>input上传文件</p>
+<pre><code>    &lt;input type=&quot;file&quot; Multiple(允许上传多个文件)/Required(允许上传一个文件)&gt;
+</code></pre>
+<p>value与placeholder区别</p>
+<pre><code>    value=&quot;123&quot; 文本框字符实例化
+    placeholder=&quot;123&quot; 文本框不实例化
+    maxlength（text）
+    maxlength=&quot;8&quot;规定文本框最大可输入字符长度
+    size（text）
+    size=&quot;20&quot;拓宽单行文本框
+    readonly（text）
+    readonly 只读
+</code></pre>
+<pre><code>&lt;datalist&gt;（text）
+&lt;input typr=&quot;text&quot; list=&quot;A&quot;&gt;
+&lt;datalist&gt;
+&lt;option&gt;内容&lt;/option&gt;
+&lt;/datalist&gt;
+</code></pre>
+<p>ange<br>
+min='&quot;&quot;最小值<br>
+max=&quot;&quot;最大值<br>
+stpe=&quot;&quot;滑动距离<br>
+valuer=&quot;&quot;初始值<br>
+属性：</p>
+<ul>
+<li>name 由用户定义 定义input元素的名称</li>
+<li>value 由用户定义 规定inpt元素的值</li>
+<li>checked 规定input元素单次加载时应当被选中</li>
+<li>maxlength 正整数 规定输入字段中最大的长度</li>
+</ul>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/2U54aynpl/" class="tag">
+                    html
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/html-biao-qian/">
+                  <h3 class="post-title">
+                    html标签
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
