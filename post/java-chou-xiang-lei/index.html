@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>java抽象类 | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584771232321">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+抽象方法就是加上abstract关键早，然后去掉大括号，直接分号结束
+抽象类：抽象方法所在的类必须是抽象类 定义：在class前加abstract
+抽象类的使用和定义：
+1.不能直接new抽象类对象
+2.必须一个子类来继承抽象父类
+覆盖重..." />
+    <meta name="keywords" content="java" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584771232321" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">java抽象类</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <ul>
+<li>抽象方法就是加上abstract关键早，然后去掉大括号，直接分号结束</li>
+<li>抽象类：抽象方法所在的类必须是抽象类 定义：在class前加abstract</li>
+<li>抽象类的使用和定义：</li>
+<li>1.不能直接new抽象类对象</li>
+<li>2.必须一个子类来继承抽象父类</li>
+<li>覆盖重写（实现）:子类去掉抽象方法的abstract然后加上大括号</li>
+</ul>
+<pre><code>package TextAbstract;
+/*
+* 抽象方法就是加上abstract关键早，然后去掉大括号，直接分号结束
+* 抽象类：抽象方法所在的类必须是抽象类 定义：在class前加abstract
+* 
+* 抽象类的使用和定义：
+* 1.不能直接new抽象类对象
+* 2.必须一个子类来继承抽象父类
+* 覆盖重写（实现）:子类去掉抽象方法的abstract然后加上大括号
+*/
+public abstract class Animal {
+   //抽象方法的定义
+   public abstract void eat();
+   //普通的成员方法
+   public void A(){
+   	
+   }
+
+}
+</code></pre>
+<pre><code>package TextAbstract;
+
+public class Cat extends Animal{
+
+   @Override
+   public void eat() {
+   	System.out.println(&quot;猫吃鱼&quot;);
+   }
+
+}
+
+</code></pre>
+<pre><code>package TextAbstract;
+
+public class Cat extends Animal{
+
+   @Override
+   public void eat() {
+   	System.out.println(&quot;猫吃鱼&quot;);
+   }
+
+}
+
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/c4eVNM4Y1/" class="tag">
+                    java
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/java-super-guan-jian-zi/">
+                  <h3 class="post-title">
+                    java super关键字
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>

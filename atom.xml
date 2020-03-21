@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://puguolin.Github.io</id>
     <title>蒲某某的笔记</title>
-    <updated>2020-03-21T05:50:42.681Z</updated>
+    <updated>2020-03-21T06:13:56.337Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://puguolin.Github.io"/>
     <link rel="self" href="https://puguolin.Github.io/atom.xml"/>
@@ -11,186 +11,341 @@
     <icon>https://puguolin.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 蒲某某的笔记</rights>
     <entry>
-        <title type="html"><![CDATA[块级元素]]></title>
-        <id>https://puguolin.Github.io/post/kuai-ji-yuan-su/</id>
-        <link href="https://puguolin.Github.io/post/kuai-ji-yuan-su/">
+        <title type="html"><![CDATA[java 多态]]></title>
+        <id>https://puguolin.Github.io/post/java-duo-tai/</id>
+        <link href="https://puguolin.Github.io/post/java-duo-tai/">
         </link>
-        <updated>2020-03-21T05:40:30.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="块级元素">块级元素</h2>
-<ul>
-<li>会计元素是组成内容的主要部分</li>
-<li>会计元素总是从新行开始，并且该行上下都添加了一些空间，高度宽度都是可以设置的。</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>类型</th>
-<th>元素</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>标题</td>
-<td>h1~h5</td>
-</tr>
-<tr>
-<td>段落</td>
-<td>p</td>
-</tr>
-<tr>
-<td>块（长）引用</td>
-<td>blockquote</td>
-</tr>
-<tr>
-<td>预格式（preformatted）文本</td>
-<td>pre</td>
-</tr>
-<tr>
-<td>各种列表元素</td>
-<td>ol，ul，li，dl，dt，dd</td>
-</tr>
-<tr>
-<td>水平线</td>
-<td>hr</td>
-</tr>
-</tbody>
-</table>
-<h2 id="blockquote">blockquote</h2>
-<ul>
-<li>引用长文本时，特别是跨越多余四行的引用，应该使用blockquote元素</li>
-<li>之间的所有文本东会从常规文本分离出来，经常会在左，右两边进行缩进（怎家外边距），而且有时使用斜体。也就是说，块引用拥有他们自己的空间。</li>
-</ul>
-<pre><code class="language-html">&lt;blockquote&gt;
-&lt;p&gt;here is a long quotation here is a long quotationg&lt;/p&gt;
-&lt;/blockquote&gt;
-</code></pre>
-<h2 id="per">per</h2>
-<ul>
-<li>在pre元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。</li>
-<li>常用应用就是用来表示计算机的源代码。</li>
-</ul>
-<pre><code>&lt;pre&gt;
-html 
-head
-    body
-&lt;/pre&gt;
-</code></pre>
-<h2 id="hr">hr/</h2>
-<ul>
-<li>hr</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[audio音频元素]]></title>
-        <id>https://puguolin.Github.io/post/audio-yin-pin-yuan-su/</id>
-        <link href="https://puguolin.Github.io/post/audio-yin-pin-yuan-su/">
-        </link>
-        <updated>2020-03-21T05:39:51.000Z</updated>
-        <content type="html"><![CDATA[<pre><code>&lt;audio&gt;
-&lt;source src=&quot;音频地址&quot;&gt;
-&lt;/audio&gt;
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[video嵌入视频元素]]></title>
-        <id>https://puguolin.Github.io/post/video-qian-ru-shi-pin-yuan-su/</id>
-        <link href="https://puguolin.Github.io/post/video-qian-ru-shi-pin-yuan-su/">
-        </link>
-        <updated>2020-03-21T05:39:20.000Z</updated>
-        <content type="html"><![CDATA[<pre><code>&lt;video src=&quot;视频地址&quot; heigth=&quot;高&quot; autoplay&gt;
-&lt;source src=&quot;视频地址.mp4&quot; type=&quot;video/mp4&quot;&gt;
-&lt;source src=&quot;视频地址.ogg&quot; type=&quot;video/ogg&quot;&gt;
-&lt;video&gt;
-</code></pre>
-<p>autoplay 网页自动播放<br>
-controls 播放控件<br>
-preload=&quot;&quot; (none 不加载，metadata只加载第一针，auto请求下载整个视频)预先载入视频<br>
-loop循环播放<br>
-poster=&quot;图片地址&quot; 视频载入时显示图片<br>
-muted 视频静音</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[<button></button>]]></title>
-        <id>https://puguolin.Github.io/post/lessbuttongreaterlessbuttongreater/</id>
-        <link href="https://puguolin.Github.io/post/lessbuttongreaterlessbuttongreater/">
-        </link>
-        <updated>2020-03-21T05:39:00.000Z</updated>
-        <content type="html"><![CDATA[<p>和js配合使用 绑定事件</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[标志对象内溢出文本 text-overflow]]></title>
-        <id>https://puguolin.Github.io/post/biao-zhi-dui-xiang-nei-yi-chu-wen-ben-text-overflow/</id>
-        <link href="https://puguolin.Github.io/post/biao-zhi-dui-xiang-nei-yi-chu-wen-ben-text-overflow/">
-        </link>
-        <updated>2020-03-21T05:38:32.000Z</updated>
-        <content type="html"><![CDATA[<p>clip 修剪溢出文本，不显示省略标记&quot;...&quot;<br>
-ellipsis 用省略标记&quot;...&quot;，标志被修剪文本</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[阴影效果 text-shadow]]></title>
-        <id>https://puguolin.Github.io/post/yin-ying-xiao-guo-text-shadow/</id>
-        <link href="https://puguolin.Github.io/post/yin-ying-xiao-guo-text-shadow/">
-        </link>
-        <updated>2020-03-21T05:37:56.000Z</updated>
-        <content type="html"><![CDATA[<pre><code>(text-shadow: h-shadow v-shadow blur color;)
-例(text-shadow:10px(水平) 10px(垂直) 10px(阴影) rad)
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[空白符处理 white-space]]></title>
-        <id>https://puguolin.Github.io/post/kong-bai-fu-chu-li-white-space/</id>
-        <link href="https://puguolin.Github.io/post/kong-bai-fu-chu-li-white-space/">
-        </link>
-        <updated>2020-03-21T05:37:27.000Z</updated>
+        <updated>2020-03-21T06:13:29.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>normal 文本空格，空行无效</li>
-<li>pro 预格式化</li>
-<li>nowrap 强制文档书写保留空格，不换行</li>
+<li>向上转型（apcasting）
+<ul>
+<li>子类型-&gt;父类型</li>
+<li>又被称为：自动类型转换</li>
+</ul>
+</li>
+<li>向下转型（downcasting）
+<ul>
+<li>父类型-&gt;子类型</li>
+<li>又被称为:强制类型转换</li>
+</ul>
+</li>
+</ul>
+<h4 id="instanceof运算符通常和判断语句连用">instanceof运算符通常和判断语句连用</h4>
+<p>语法格式：</p>
+<pre><code>(引用 instanceof 数据类型名)
+</code></pre>
+<p>以上运算符结果：</p>
+<pre><code>true/false
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[java 方法覆盖]]></title>
+        <id>https://puguolin.Github.io/post/java-fang-fa-fu-gai/</id>
+        <link href="https://puguolin.Github.io/post/java-fang-fa-fu-gai/">
+        </link>
+        <updated>2020-03-21T06:13:11.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="条件">条件</h4>
+<ul>
+<li>方法重写发生在具有继承关系的父子类之间</li>
+<li>返回值相同，形参列表相同，方法名相同</li>
+<li>访问权限不能更低，只能更高</li>
+<li>执行异常只能更多，不能更少</li>
+</ul>
+<h5 id="注">注：</h5>
+<ul>
+<li>私有方法不能覆盖</li>
+<li>构造方法不能覆盖</li>
+<li>静态方法不能覆盖</li>
+<li>覆盖只针对方法，不谈属性</li>
 </ul>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[textarea 文本域元素]]></title>
-        <id>https://puguolin.Github.io/post/textarea-wen-ben-yu-yuan-su/</id>
-        <link href="https://puguolin.Github.io/post/textarea-wen-ben-yu-yuan-su/">
+        <title type="html"><![CDATA[java static关键字]]></title>
+        <id>https://puguolin.Github.io/post/java-static-guan-jian-zi/</id>
+        <link href="https://puguolin.Github.io/post/java-static-guan-jian-zi/">
         </link>
-        <updated>2020-03-21T05:37:07.000Z</updated>
-        <content type="html"><![CDATA[<pre><code>&lt;textarea rows=&quot;3&quot; cols=&quot;20&quot;&gt;
-文本内容
-&lt;/textarea&gt;
+        <updated>2020-03-21T06:12:21.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>没有static关键字的方法被称之为实例方法&quot;.引用&quot;</li>
+<li>没有static的关键字被称之为实例变量</li>
+<li>当一个行为/动作执行过程需要一个对象参与，那么这个方法一定要定义为实例方法，不带static<br>
+继承(extends)</li>
+</ol>
+<h4 id="作用代码复用">作用：代码复用</h4>
+<ul>
+<li>有了继承才有之后的方法覆盖和多态机制</li>
+<li>继承语法</li>
+</ul>
+<pre><code>修饰符列表 class 子类名 entends 父类名{
+    类体=属性+方法
+}
+</code></pre>
+<h5 id="注私有的构造方法不支持继承">注：私有的，构造方法，不支持继承</h5>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[构造方法]]></title>
+        <id>https://puguolin.Github.io/post/gou-zao-fang-fa/</id>
+        <link href="https://puguolin.Github.io/post/gou-zao-fang-fa/">
+        </link>
+        <updated>2020-03-21T06:12:01.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>修饰符列表 构造方法名(形式参数列表)
+{
+    构造方法体;
+}
+</code></pre>
+<p>注:<br>
+对于构造方法来说，返回值类型不休要指定并且也不能写void，只要写了void，那么这个方法就成为普通方法</p>
+<p>构造方法作业：通过构造方法调用，可以创建对象</p>
+<h4 id="调用">调用：</h4>
+<pre><code>new 构造方法(实参列表);
+</code></pre>
+<p>注：构造方法支持方法重载</p>
+<h2 id="this关键字">this关键字</h2>
+<ol>
+<li>this关键字翻译为 这个</li>
+<li>this是一个引用，this是一个变量，this变量中保存了内存的地址指向本身，this存储在java堆内存中java对象内部</li>
+<li>创建多个对象就有多个this</li>
+<li>this出现在实例方法中，this表示指向当前对象执行这个对象的对象（this代表当前对象）</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[java 面向对象的封装priate]]></title>
+        <id>https://puguolin.Github.io/post/java-mian-xiang-dui-xiang-de-feng-zhuang-priate/</id>
+        <link href="https://puguolin.Github.io/post/java-mian-xiang-dui-xiang-de-feng-zhuang-priate/">
+        </link>
+        <updated>2020-03-21T06:11:36.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>private int A()
+{
+    
+}
+</code></pre>
+<p>set方法（修改）</p>
+<pre><code>public int a;
+public void steA(int a)
+{
+    this.a=a;
+}
+</code></pre>
+<p>get方法（读取）</p>
+<pre><code>public int getA(int a)
+{
+    return a;
+}
 </code></pre>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[表单元素：]]></title>
-        <id>https://puguolin.Github.io/post/biao-dan-yuan-su/</id>
-        <link href="https://puguolin.Github.io/post/biao-dan-yuan-su/">
+        <title type="html"><![CDATA[java 类的定义]]></title>
+        <id>https://puguolin.Github.io/post/java-lei-de-ding-yi/</id>
+        <link href="https://puguolin.Github.io/post/java-lei-de-ding-yi/">
         </link>
-        <updated>2020-03-21T05:36:20.000Z</updated>
-        <content type="html"><![CDATA[<h4 id="select-下拉表单元素">select 下拉表单元素</h4>
-<pre><code>&lt;select&gt;
-&lt;option&gt;选项1&lt;option&gt;
-&lt;/select&gt;
+        <updated>2020-03-21T06:10:59.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="语法结构">语法结构</h4>
+<pre><code>修饰符列表 class 类名{
+    
+}
 </code></pre>
-<pre><code>在&lt;option&gt;中定义selected=&quot;selected&quot;时，当前项即为默认选中项
+<p>例如</p>
+<pre><code>class Text01
+{
+    
+}
+</code></pre>
+<h4 id="属性通常是对象状态的信息">属性（通常是对象状态的信息）</h4>
+<p>属性通常采用标量方式来定义</p>
+<h5 id="在类体当中方法体之外的标量被称为成员变量成员变量没有复制系统默认赋初值一切向0看齐">在类体当中，方法体之外的标量被称为成员变量，成员变量没有复制，系统默认赋初值：一切向0看齐</h5>
+<h4 id="new定义">new定义</h4>
+<pre><code>new 类名();
+</code></pre>
+<p><img src="9E8120D44D704B3F85B265CDB998A67E" alt="Jvm" loading="lazy"><br>
+实例变量不能通过类名的方式访问</p>
+<p>静态变量不能通过引用的方式访问</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[java方法定义]]></title>
+        <id>https://puguolin.Github.io/post/java-fang-fa-ding-yi/</id>
+        <link href="https://puguolin.Github.io/post/java-fang-fa-ding-yi/">
+        </link>
+        <updated>2020-03-21T06:10:02.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>访问修饰符 返回值类型 方法名(参数列表)
+{
+    方法体;
+}
+</code></pre>
+<p>例如</p>
+<pre><code>public int a;
+public static void A(String a)
+{
+    this.a=a;
+}
+</code></pre>
+<h4 id="注">注：</h4>
+<h4 id="1有static静态变量存在方法区默认占内存的方法调用">1.有static(静态变量，存在方法区，默认占内存)的方法调用：</h4>
+<pre><code>类名.方法名(实参);
+</code></pre>
+<p>例如:</p>
+<pre><code>class Text01
+{
+    public static void A()
+    {
+        System.out.println(&quot;helloword&quot;);
+    }
+}
+class Text02
+{
+    public static void main(String[] args)
+    {
+        A();
+    }
+}
+</code></pre>
+<h4 id="2没有static实例变量未穿件对象时默认不占内存空间方法调用">2.没有static(实例变量，未穿件对象时默认不占内存空间)方法调用:</h4>
+<pre><code>引用.方法名();
+</code></pre>
+<p>例如：</p>
+<pre><code>class Text01
+{
+    public void A()
+    {
+        System.out.println(&quot;hello word&quot;);
+    }
+}
+public Text02
+{
+    public static void main(String[] args)
+    {
+        Text01 text01=new Text01();
+        text01.A();
+    }
+}
 </code></pre>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[<laber>标签：]]></title>
-        <id>https://puguolin.Github.io/post/lesslabergreaterbiao-qian/</id>
-        <link href="https://puguolin.Github.io/post/lesslabergreaterbiao-qian/">
+        <title type="html"><![CDATA[java 接收用户输入scanner]]></title>
+        <id>https://puguolin.Github.io/post/java-jie-shou-yong-hu-shu-ru-scanner/</id>
+        <link href="https://puguolin.Github.io/post/java-jie-shou-yong-hu-shu-ru-scanner/">
         </link>
-        <updated>2020-03-21T05:35:32.000Z</updated>
-        <content type="html"><![CDATA[<h4 id="laber可以绑定表单元素"><laber>可以绑定表单元素</h4>
-<pre><code>&lt;laber for=&quot;sex&quot;&gt;男人&lt;/laber&gt;
-&lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;sex&quot;/&gt;
+        <updated>2020-03-21T06:09:37.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>class a
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner=new Scanner();
+        scanner.nextInt();//int类型
+        scanner.next();//string类型
+        scanner.nextDouble();//double类型
+    }
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[java public class与class区别]]></title>
+        <id>https://puguolin.Github.io/post/java-public-class-yu-class-qu-bie/</id>
+        <link href="https://puguolin.Github.io/post/java-public-class-yu-class-qu-bie/">
+        </link>
+        <updated>2020-03-21T06:09:18.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>一个java源代码中可以定义多个class</li>
+<li>一个java源代码中public的class不是必须的</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[java接口]]></title>
+        <id>https://puguolin.Github.io/post/java-jie-kou/</id>
+        <link href="https://puguolin.Github.io/post/java-jie-kou/">
+        </link>
+        <updated>2020-03-21T06:07:11.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>接口就是多个类的公共规范</li>
+<li>接口是一种引用数据类型，最重要的内容就是其中的：抽象方法</li>
+<li></li>
+<li>如何定义一个接口：</li>
+</ul>
+<pre><code> public interface 接口名称{
+		//接口内容
+ }
+</code></pre>
+<ul>
+<li>接口中可以包含的内容有常亮，抽象方法，默认方法，静态方法，私有方法</li>
+<li></li>
+<li>接口使用步骤：</li>
+<li>1.不能直接使用，必须有一个实现类来实现该接口</li>
+<li>格式：</li>
+</ul>
+<pre><code>	public class 实现类名称 implements 接口名称{//...}
+</code></pre>
+<ul>
+<li>2.接口的实现类必须覆盖重写（实现）接口所有的抽象方法</li>
+<li>实现：去掉abstract关键字，加上方法体的大括号</li>
+<li>注意：如果实现类并没有覆盖重写接口中所有抽象方法，那么这个实现类自己必须是抽象类</li>
+</ul>
+<pre><code>package Textinterface;
+/*
+* 接口就是多个类的公共规范
+* 接口是一种引用数据类型，最重要的内容就是其中的：抽象方法
+* 
+* 如何定义一个接口：
+* public interface 接口名称{
+*		//接口内容
+* }
+* 
+* 接口中可以包含的内容有常亮，抽象方法，默认方法，静态方法，私有方法
+* 
+* 接口使用步骤：
+* 1.不能直接使用，必须有一个实现类来实现该接口
+* 	格式：
+* 	public class 实现类名称 implements 接口名称{//...}
+* 2.接口的实现类必须覆盖重写（实现）接口所有的抽象方法
+* 实现：去掉abstract关键字，加上方法体的大括号
+* 注意：如果实现类并没有覆盖重写接口中所有抽象方法，那么这个实现类自己必须是抽象类
+*/
+public class text {
+
+   public static void main(String[] args) {
+   	// TODO 自动生成的方法存根
+   	MyinterfaceAbstractimpl myinterfaceAbstractimpl=new MyinterfaceAbstractimpl();
+   	myinterfaceAbstractimpl.methodAbs();
+   	myinterfaceAbstractimpl.methodAbs1();
+   }
+
+}
+</code></pre>
+<pre><code>package Textinterface;
+
+public class MyinterfaceAbstractimpl implements Interface01{
+
+   @Override
+   public void methodAbs() {
+   	// TODO 自动生成的方法存根
+   	System.out.println(&quot;第一个&quot;);
+   }
+
+   @Override
+   public void methodAbs1() {
+   	// TODO 自动生成的方法存根
+   	System.out.println(&quot;第二个&quot;);
+   }
+   
+}
+
+</code></pre>
+<pre><code>package Textinterface;
+
+public interface Interface01 {
+   //这是一个抽象方法
+   public abstract void methodAbs();
+   
+   //修饰符和抽象方法可以省略
+   void methodAbs1();
+}
 </code></pre>
 ]]></content>
     </entry>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>java方法定义 | 蒲某某的笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://puguolin.Github.io/favicon.ico?v=1584771232321">
+<link rel="stylesheet" href="https://puguolin.Github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="访问修饰符 返回值类型 方法名(参数列表)
+{
+    方法体;
+}
+
+例如
+public int a;
+public static void A(String a)
+{
+    this.a=a;
+}
+
+注：
+1.有static(静态变量..." />
+    <meta name="keywords" content="java" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://puguolin.Github.io">
+        <img src="https://puguolin.Github.io/images/avatar.png?v=1584771232321" class="site-logo">
+        <h1 class="site-title">蒲某某的笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒲某某的笔记
+    </div>
+    <div class="site-footer">
+      <h4>蒲某某的笔记<h4> | <a class="rss" href="https://puguolin.Github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">java方法定义</h2>
+            <div class="post-date">2020-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <pre><code>访问修饰符 返回值类型 方法名(参数列表)
+{
+    方法体;
+}
+</code></pre>
+<p>例如</p>
+<pre><code>public int a;
+public static void A(String a)
+{
+    this.a=a;
+}
+</code></pre>
+<h4 id="注">注：</h4>
+<h4 id="1有static静态变量存在方法区默认占内存的方法调用">1.有static(静态变量，存在方法区，默认占内存)的方法调用：</h4>
+<pre><code>类名.方法名(实参);
+</code></pre>
+<p>例如:</p>
+<pre><code>class Text01
+{
+    public static void A()
+    {
+        System.out.println(&quot;helloword&quot;);
+    }
+}
+class Text02
+{
+    public static void main(String[] args)
+    {
+        A();
+    }
+}
+</code></pre>
+<h4 id="2没有static实例变量未穿件对象时默认不占内存空间方法调用">2.没有static(实例变量，未穿件对象时默认不占内存空间)方法调用:</h4>
+<pre><code>引用.方法名();
+</code></pre>
+<p>例如：</p>
+<pre><code>class Text01
+{
+    public void A()
+    {
+        System.out.println(&quot;hello word&quot;);
+    }
+}
+public Text02
+{
+    public static void main(String[] args)
+    {
+        Text01 text01=new Text01();
+        text01.A();
+    }
+}
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://puguolin.Github.io/tag/c4eVNM4Y1/" class="tag">
+                    java
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://puguolin.Github.io/post/java-jie-shou-yong-hu-shu-ru-scanner/">
+                  <h3 class="post-title">
+                    java 接收用户输入scanner
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
