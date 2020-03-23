@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://puguolin.Github.io</id>
+    <id>https://2922623692.github.io/sansanc.github.io/</id>
     <title>PuGuolin notes</title>
-    <updated>2020-03-21T11:10:25.212Z</updated>
+    <updated>2020-03-23T01:30:30.730Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://puguolin.Github.io"/>
-    <link rel="self" href="https://puguolin.Github.io/atom.xml"/>
+    <link rel="alternate" href="https://2922623692.github.io/sansanc.github.io/"/>
+    <link rel="self" href="https://2922623692.github.io/sansanc.github.io/atom.xml"/>
     <subtitle>PuGuolin notes</subtitle>
-    <logo>https://puguolin.Github.io/images/avatar.png</logo>
-    <icon>https://puguolin.Github.io/favicon.ico</icon>
+    <logo>https://2922623692.github.io/sansanc.github.io/images/avatar.png</logo>
+    <icon>https://2922623692.github.io/sansanc.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, PuGuolin notes</rights>
     <entry>
         <title type="html"><![CDATA[java 多态]]></title>
-        <id>https://puguolin.Github.io/post/java-duo-tai/</id>
-        <link href="https://puguolin.Github.io/post/java-duo-tai/">
+        <id>https://2922623692.github.io/sansanc.github.io/post/java-duo-tai/</id>
+        <link href="https://2922623692.github.io/sansanc.github.io/post/java-duo-tai/">
         </link>
         <updated>2020-03-21T06:13:29.000Z</updated>
         <content type="html"><![CDATA[<ul>
@@ -41,8 +41,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[java 方法覆盖]]></title>
-        <id>https://puguolin.Github.io/post/java-fang-fa-fu-gai/</id>
-        <link href="https://puguolin.Github.io/post/java-fang-fa-fu-gai/">
+        <id>https://2922623692.github.io/sansanc.github.io/post/java-fang-fa-fu-gai/</id>
+        <link href="https://2922623692.github.io/sansanc.github.io/post/java-fang-fa-fu-gai/">
         </link>
         <updated>2020-03-21T06:13:11.000Z</updated>
         <content type="html"><![CDATA[<h4 id="条件">条件</h4>
@@ -63,8 +63,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[java static关键字]]></title>
-        <id>https://puguolin.Github.io/post/java-static-guan-jian-zi/</id>
-        <link href="https://puguolin.Github.io/post/java-static-guan-jian-zi/">
+        <id>https://2922623692.github.io/sansanc.github.io/post/java-static-guan-jian-zi/</id>
+        <link href="https://2922623692.github.io/sansanc.github.io/post/java-static-guan-jian-zi/">
         </link>
         <updated>2020-03-21T06:12:21.000Z</updated>
         <content type="html"><![CDATA[<ol>
@@ -87,8 +87,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[java 构造方法]]></title>
-        <id>https://puguolin.Github.io/post/gou-zao-fang-fa/</id>
-        <link href="https://puguolin.Github.io/post/gou-zao-fang-fa/">
+        <id>https://2922623692.github.io/sansanc.github.io/post/gou-zao-fang-fa/</id>
+        <link href="https://2922623692.github.io/sansanc.github.io/post/gou-zao-fang-fa/">
         </link>
         <updated>2020-03-21T06:12:01.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
@@ -115,8 +115,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[java 面向对象的封装priate]]></title>
-        <id>https://puguolin.Github.io/post/java-mian-xiang-dui-xiang-de-feng-zhuang-priate/</id>
-        <link href="https://puguolin.Github.io/post/java-mian-xiang-dui-xiang-de-feng-zhuang-priate/">
+        <id>https://2922623692.github.io/sansanc.github.io/post/java-mian-xiang-dui-xiang-de-feng-zhuang-priate/</id>
+        <link href="https://2922623692.github.io/sansanc.github.io/post/java-mian-xiang-dui-xiang-de-feng-zhuang-priate/">
         </link>
         <updated>2020-03-21T06:11:36.000Z</updated>
         <content type="html"><![CDATA[<pre><code>private int A()
@@ -141,8 +141,8 @@ public void steA(int a)
     </entry>
     <entry>
         <title type="html"><![CDATA[java 类的定义]]></title>
-        <id>https://puguolin.Github.io/post/java-lei-de-ding-yi/</id>
-        <link href="https://puguolin.Github.io/post/java-lei-de-ding-yi/">
+        <id>https://2922623692.github.io/sansanc.github.io/post/java-lei-de-ding-yi/</id>
+        <link href="https://2922623692.github.io/sansanc.github.io/post/java-lei-de-ding-yi/">
         </link>
         <updated>2020-03-21T06:10:59.000Z</updated>
         <content type="html"><![CDATA[<h4 id="语法结构">语法结构</h4>
@@ -169,8 +169,8 @@ public void steA(int a)
     </entry>
     <entry>
         <title type="html"><![CDATA[java方法定义]]></title>
-        <id>https://puguolin.Github.io/post/java-fang-fa-ding-yi/</id>
-        <link href="https://puguolin.Github.io/post/java-fang-fa-ding-yi/">
+        <id>https://2922623692.github.io/sansanc.github.io/post/java-fang-fa-ding-yi/</id>
+        <link href="https://2922623692.github.io/sansanc.github.io/post/java-fang-fa-ding-yi/">
         </link>
         <updated>2020-03-21T06:10:02.000Z</updated>
         <content type="html"><![CDATA[<pre><code>访问修饰符 返回值类型 方法名(参数列表)
@@ -229,8 +229,8 @@ public Text02
     </entry>
     <entry>
         <title type="html"><![CDATA[java 接收用户输入scanner]]></title>
-        <id>https://puguolin.Github.io/post/java-jie-shou-yong-hu-shu-ru-scanner/</id>
-        <link href="https://puguolin.Github.io/post/java-jie-shou-yong-hu-shu-ru-scanner/">
+        <id>https://2922623692.github.io/sansanc.github.io/post/java-jie-shou-yong-hu-shu-ru-scanner/</id>
+        <link href="https://2922623692.github.io/sansanc.github.io/post/java-jie-shou-yong-hu-shu-ru-scanner/">
         </link>
         <updated>2020-03-21T06:09:37.000Z</updated>
         <content type="html"><![CDATA[<pre><code>class a
@@ -248,8 +248,8 @@ public Text02
     </entry>
     <entry>
         <title type="html"><![CDATA[java public class与class区别]]></title>
-        <id>https://puguolin.Github.io/post/java-public-class-yu-class-qu-bie/</id>
-        <link href="https://puguolin.Github.io/post/java-public-class-yu-class-qu-bie/">
+        <id>https://2922623692.github.io/sansanc.github.io/post/java-public-class-yu-class-qu-bie/</id>
+        <link href="https://2922623692.github.io/sansanc.github.io/post/java-public-class-yu-class-qu-bie/">
         </link>
         <updated>2020-03-21T06:09:18.000Z</updated>
         <content type="html"><![CDATA[<ul>
@@ -260,8 +260,8 @@ public Text02
     </entry>
     <entry>
         <title type="html"><![CDATA[java接口]]></title>
-        <id>https://puguolin.Github.io/post/java-jie-kou/</id>
-        <link href="https://puguolin.Github.io/post/java-jie-kou/">
+        <id>https://2922623692.github.io/sansanc.github.io/post/java-jie-kou/</id>
+        <link href="https://2922623692.github.io/sansanc.github.io/post/java-jie-kou/">
         </link>
         <updated>2020-03-21T06:07:11.000Z</updated>
         <content type="html"><![CDATA[<ul>
