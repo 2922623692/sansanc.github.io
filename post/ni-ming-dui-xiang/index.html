@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>匿名对象 | PuGuolin notes</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://2922623692.github.io/sansanc.github.io//favicon.ico?v=1584959299116">
+<link rel="stylesheet" href="https://2922623692.github.io/sansanc.github.io//styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="匿名对象就是只有右边的对象，内衣左边的名字和赋值运算符
+注意:匿名对象只能使用唯一一次，下次再用不得不用再创建一个新对象
+使用建议：如果确定有一个对象只能使用唯一一次哪么就可以使用匿名对象
+class A
+{
+    public stat..." />
+    <meta name="keywords" content="java" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://2922623692.github.io/sansanc.github.io/">
+        <img src="https://2922623692.github.io/sansanc.github.io//images/avatar.png?v=1584959299116" class="site-logo">
+        <h1 class="site-title">PuGuolin notes</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      PuGuolin notes
+    </div>
+    <div class="site-footer">
+      <h4 >PuGuolin notes<h4> | <a class="rss" href="https://2922623692.github.io/sansanc.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">匿名对象</h2>
+            <div class="post-date">2020-03-23</div>
+            
+            <div class="post-content" v-pre>
+              <p>匿名对象就是只有右边的对象，内衣左边的名字和赋值运算符</p>
+<p>注意:匿名对象只能使用唯一一次，下次再用不得不用再创建一个新对象<br>
+使用建议：如果确定有一个对象只能使用唯一一次哪么就可以使用匿名对象</p>
+<pre><code>class A
+{
+    public static void main(String[] args)
+    {
+        B b=new B();
+        b.name=&quot;zhangsan&quot;;
+        b.showname();
+        System.out.println(&quot;------&quot;);
+        
+        //匿名对象
+        new B().name=&quot;lisi&quot;;//我叫null
+    }
+}
+class B
+{
+    string name;
+    public void showname()
+    {
+        System.out.println(&quot;我叫&quot;+name);
+    }
+}
+
+</code></pre>
+<p>结果：</p>
+<pre><code>我叫zhangsan
+-------
+我叫null
+</code></pre>
+<h4 id="匿名对象使用">匿名对象使用：</h4>
+<pre><code>class Text
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner=new Scanner(System.in);
+        int num=scanner.nextInt();
+        
+        //匿名对象
+        int num=nuw Scanner(System.in).nextInt();
+        
+        /*
+        //使用一般方法传入参数
+        Scanner sc=new Scanner(String.in);
+        methodparam(sc);
+        */
+        
+        //使用匿名对象传参数
+        methodparam(new Scanner(System.in));
+    }
+    
+    public static void methodparm(Scanner sc)
+    {
+        int num=sc.nextInt();
+        System.out.println(&quot;你输入的是：&quot;+num);
+    }
+}
+</code></pre>
+<p>结果：</p>
+<pre><code>1
+你输入的是：1
+</code></pre>
+<h2 id="arraylist">arraylist</h2>
+<ul>
+<li>
+<p>数组长度不可改变</p>
+</li>
+<li>
+<p>但是arraylist集合的长度是可以随意改变的</p>
+</li>
+<li>
+<p>对于arratlist来说，有一个尖括号<E>代表泛型</p>
+</li>
+<li>
+<p>泛型：也就是装在集合当中所有的元素，全都是统一的什么数据类型</p>
+</li>
+<li>
+<p>注意，泛型只能是引用类型，不能是基础类型</p>
+</li>
+</ul>
+<p>注意事项：</p>
+<ul>
+<li>对于arraylist集合来说，直接打印得到的不是地址值，而是内容。</li>
+<li>如果内容为空，得到空的中括号[]</li>
+</ul>
+<pre><code>class a
+{
+    public static void main(String[] args)
+    {
+        Arraylist&lt;String&gt; list=new ArratList&lt;&gt;();
+        list.add(&quot;zhangsan`&quot;);
+    }
+}
+</code></pre>
+<h4 id="arraylist常用方法">arraylist常用方法</h4>
+<p>public boolean add(E a)//相机和中添加元素，参数的类型和泛型一致。返回值代表添加是否成功</p>
+<p>备注：对于arraylist集合来说。add添加动作一定成功，所以返回值可用可不用</p>
+<pre><code>class Text
+{
+    public static void main(String90 args)
+    {
+        ArrayList&lt;String&gt; list =new ArrayList&lt;&gt;();
+        
+        //向集合中添加元素：add
+        boolean success=list.add(&quot;zhangsan&quot;);
+        System.out.println(list);
+        System.out.println(&quot;添加动作是否成功：&quot;+success);//true
+    }
+}
+</code></pre>
+<p>结果：</p>
+<pre><code>[zhangsan]
+添加动作是否成功：true
+</code></pre>
+<p>public E get（int index）//从集合当中获取元素，参数是索引编号，返回值就是对应未知得到元素</p>
+<p>public E remove(int index)//从集合当中删除元素，参数是索引编号，返回值就是被删除掉的袁术</p>
+<p>public int size()//获取集合的尺寸长度，返回值是集合中包含的元素个数。</p>
+<h4 id="存储内存基本数据">存储内存基本数据</h4>
+<p>泛型只能是引用数据类型，不是基本数据类型</p>
+<p>从jdk1.5+ 支持自动装箱，自动拆箱</p>
+<table>
+<thead>
+<tr>
+<th>基本数据类型</th>
+<th>包装类</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte</td>
+<td>Byte</td>
+</tr>
+<tr>
+<td>short</td>
+<td>Short</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>float</td>
+<td>Float</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Character</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Boolean</td>
+</tr>
+</tbody>
+</table>
+<pre><code>public Text{
+    public static void main(String[] args)
+    {
+        ArrayList&lt;Integer&gt; listc=new ArrayList&lt;&gt;();
+        listc.add(100);
+        listc.add(200);
+        System.out.println(listc);
+        int a=listc.get(1);//拿到第一个
+        System.out.println(&quot;第一个元素是：&quot;+a);
+    }
+}
+</code></pre>
+<p>结果：</p>
+<pre><code>[100,200]
+第一个元素是：100
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://2922623692.github.io/sansanc.github.io/tag/c4eVNM4Y1/" class="tag">
+                    java
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://2922623692.github.io/sansanc.github.io/post/java-duo-tai/">
+                  <h3 class="post-title">
+                    java 多态
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>

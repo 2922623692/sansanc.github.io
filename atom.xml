@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://2922623692.github.io/sansanc.github.io/</id>
     <title>PuGuolin notes</title>
-    <updated>2020-03-23T01:30:30.730Z</updated>
+    <updated>2020-03-23T10:28:22.138Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://2922623692.github.io/sansanc.github.io/"/>
     <link rel="self" href="https://2922623692.github.io/sansanc.github.io/atom.xml"/>
@@ -10,6 +10,220 @@
     <logo>https://2922623692.github.io/sansanc.github.io/images/avatar.png</logo>
     <icon>https://2922623692.github.io/sansanc.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, PuGuolin notes</rights>
+    <entry>
+        <title type="html"><![CDATA[随机数（random）]]></title>
+        <id>https://2922623692.github.io/sansanc.github.io/post/sui-ji-shu-random/</id>
+        <link href="https://2922623692.github.io/sansanc.github.io/post/sui-ji-shu-random/">
+        </link>
+        <updated>2020-03-23T10:28:08.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>生成0-10的随机数
+import java.util.Random;
+class a
+{
+    public static void main(String[] args)
+    {
+        Random random=new random();
+        int a=Math.abs(random.nextInt()%10);
+        system.out.println(a);
+    }
+}
+</code></pre>
+<pre><code>生成5-10的随机数
+import java.util.Random;
+class a
+{
+    public static void main(String[] args)
+    {
+        Random random=new Random();
+        int a=Math.abs(random.nextInt()%6+5);
+    }
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[匿名对象]]></title>
+        <id>https://2922623692.github.io/sansanc.github.io/post/ni-ming-dui-xiang/</id>
+        <link href="https://2922623692.github.io/sansanc.github.io/post/ni-ming-dui-xiang/">
+        </link>
+        <updated>2020-03-23T10:27:30.000Z</updated>
+        <content type="html"><![CDATA[<p>匿名对象就是只有右边的对象，内衣左边的名字和赋值运算符</p>
+<p>注意:匿名对象只能使用唯一一次，下次再用不得不用再创建一个新对象<br>
+使用建议：如果确定有一个对象只能使用唯一一次哪么就可以使用匿名对象</p>
+<pre><code>class A
+{
+    public static void main(String[] args)
+    {
+        B b=new B();
+        b.name=&quot;zhangsan&quot;;
+        b.showname();
+        System.out.println(&quot;------&quot;);
+        
+        //匿名对象
+        new B().name=&quot;lisi&quot;;//我叫null
+    }
+}
+class B
+{
+    string name;
+    public void showname()
+    {
+        System.out.println(&quot;我叫&quot;+name);
+    }
+}
+
+</code></pre>
+<p>结果：</p>
+<pre><code>我叫zhangsan
+-------
+我叫null
+</code></pre>
+<h4 id="匿名对象使用">匿名对象使用：</h4>
+<pre><code>class Text
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner=new Scanner(System.in);
+        int num=scanner.nextInt();
+        
+        //匿名对象
+        int num=nuw Scanner(System.in).nextInt();
+        
+        /*
+        //使用一般方法传入参数
+        Scanner sc=new Scanner(String.in);
+        methodparam(sc);
+        */
+        
+        //使用匿名对象传参数
+        methodparam(new Scanner(System.in));
+    }
+    
+    public static void methodparm(Scanner sc)
+    {
+        int num=sc.nextInt();
+        System.out.println(&quot;你输入的是：&quot;+num);
+    }
+}
+</code></pre>
+<p>结果：</p>
+<pre><code>1
+你输入的是：1
+</code></pre>
+<h2 id="arraylist">arraylist</h2>
+<ul>
+<li>
+<p>数组长度不可改变</p>
+</li>
+<li>
+<p>但是arraylist集合的长度是可以随意改变的</p>
+</li>
+<li>
+<p>对于arratlist来说，有一个尖括号<E>代表泛型</p>
+</li>
+<li>
+<p>泛型：也就是装在集合当中所有的元素，全都是统一的什么数据类型</p>
+</li>
+<li>
+<p>注意，泛型只能是引用类型，不能是基础类型</p>
+</li>
+</ul>
+<p>注意事项：</p>
+<ul>
+<li>对于arraylist集合来说，直接打印得到的不是地址值，而是内容。</li>
+<li>如果内容为空，得到空的中括号[]</li>
+</ul>
+<pre><code>class a
+{
+    public static void main(String[] args)
+    {
+        Arraylist&lt;String&gt; list=new ArratList&lt;&gt;();
+        list.add(&quot;zhangsan`&quot;);
+    }
+}
+</code></pre>
+<h4 id="arraylist常用方法">arraylist常用方法</h4>
+<p>public boolean add(E a)//相机和中添加元素，参数的类型和泛型一致。返回值代表添加是否成功</p>
+<p>备注：对于arraylist集合来说。add添加动作一定成功，所以返回值可用可不用</p>
+<pre><code>class Text
+{
+    public static void main(String90 args)
+    {
+        ArrayList&lt;String&gt; list =new ArrayList&lt;&gt;();
+        
+        //向集合中添加元素：add
+        boolean success=list.add(&quot;zhangsan&quot;);
+        System.out.println(list);
+        System.out.println(&quot;添加动作是否成功：&quot;+success);//true
+    }
+}
+</code></pre>
+<p>结果：</p>
+<pre><code>[zhangsan]
+添加动作是否成功：true
+</code></pre>
+<p>public E get（int index）//从集合当中获取元素，参数是索引编号，返回值就是对应未知得到元素</p>
+<p>public E remove(int index)//从集合当中删除元素，参数是索引编号，返回值就是被删除掉的袁术</p>
+<p>public int size()//获取集合的尺寸长度，返回值是集合中包含的元素个数。</p>
+<h4 id="存储内存基本数据">存储内存基本数据</h4>
+<p>泛型只能是引用数据类型，不是基本数据类型</p>
+<p>从jdk1.5+ 支持自动装箱，自动拆箱</p>
+<table>
+<thead>
+<tr>
+<th>基本数据类型</th>
+<th>包装类</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte</td>
+<td>Byte</td>
+</tr>
+<tr>
+<td>short</td>
+<td>Short</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>float</td>
+<td>Float</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Character</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Boolean</td>
+</tr>
+</tbody>
+</table>
+<pre><code>public Text{
+    public static void main(String[] args)
+    {
+        ArrayList&lt;Integer&gt; listc=new ArrayList&lt;&gt;();
+        listc.add(100);
+        listc.add(200);
+        System.out.println(listc);
+        int a=listc.get(1);//拿到第一个
+        System.out.println(&quot;第一个元素是：&quot;+a);
+    }
+}
+</code></pre>
+<p>结果：</p>
+<pre><code>[100,200]
+第一个元素是：100
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[java 多态]]></title>
         <id>https://2922623692.github.io/sansanc.github.io/post/java-duo-tai/</id>
@@ -242,110 +456,6 @@ public Text02
         scanner.next();//string类型
         scanner.nextDouble();//double类型
     }
-}
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[java public class与class区别]]></title>
-        <id>https://2922623692.github.io/sansanc.github.io/post/java-public-class-yu-class-qu-bie/</id>
-        <link href="https://2922623692.github.io/sansanc.github.io/post/java-public-class-yu-class-qu-bie/">
-        </link>
-        <updated>2020-03-21T06:09:18.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>一个java源代码中可以定义多个class</li>
-<li>一个java源代码中public的class不是必须的</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[java接口]]></title>
-        <id>https://2922623692.github.io/sansanc.github.io/post/java-jie-kou/</id>
-        <link href="https://2922623692.github.io/sansanc.github.io/post/java-jie-kou/">
-        </link>
-        <updated>2020-03-21T06:07:11.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>接口就是多个类的公共规范</li>
-<li>接口是一种引用数据类型，最重要的内容就是其中的：抽象方法</li>
-<li></li>
-<li>如何定义一个接口：</li>
-</ul>
-<pre><code> public interface 接口名称{
-		//接口内容
- }
-</code></pre>
-<ul>
-<li>接口中可以包含的内容有常亮，抽象方法，默认方法，静态方法，私有方法</li>
-<li></li>
-<li>接口使用步骤：</li>
-<li>1.不能直接使用，必须有一个实现类来实现该接口</li>
-<li>格式：</li>
-</ul>
-<pre><code>	public class 实现类名称 implements 接口名称{//...}
-</code></pre>
-<ul>
-<li>2.接口的实现类必须覆盖重写（实现）接口所有的抽象方法</li>
-<li>实现：去掉abstract关键字，加上方法体的大括号</li>
-<li>注意：如果实现类并没有覆盖重写接口中所有抽象方法，那么这个实现类自己必须是抽象类</li>
-</ul>
-<pre><code>package Textinterface;
-/*
-* 接口就是多个类的公共规范
-* 接口是一种引用数据类型，最重要的内容就是其中的：抽象方法
-* 
-* 如何定义一个接口：
-* public interface 接口名称{
-*		//接口内容
-* }
-* 
-* 接口中可以包含的内容有常亮，抽象方法，默认方法，静态方法，私有方法
-* 
-* 接口使用步骤：
-* 1.不能直接使用，必须有一个实现类来实现该接口
-* 	格式：
-* 	public class 实现类名称 implements 接口名称{//...}
-* 2.接口的实现类必须覆盖重写（实现）接口所有的抽象方法
-* 实现：去掉abstract关键字，加上方法体的大括号
-* 注意：如果实现类并没有覆盖重写接口中所有抽象方法，那么这个实现类自己必须是抽象类
-*/
-public class text {
-
-   public static void main(String[] args) {
-   	// TODO 自动生成的方法存根
-   	MyinterfaceAbstractimpl myinterfaceAbstractimpl=new MyinterfaceAbstractimpl();
-   	myinterfaceAbstractimpl.methodAbs();
-   	myinterfaceAbstractimpl.methodAbs1();
-   }
-
-}
-</code></pre>
-<pre><code>package Textinterface;
-
-public class MyinterfaceAbstractimpl implements Interface01{
-
-   @Override
-   public void methodAbs() {
-   	// TODO 自动生成的方法存根
-   	System.out.println(&quot;第一个&quot;);
-   }
-
-   @Override
-   public void methodAbs1() {
-   	// TODO 自动生成的方法存根
-   	System.out.println(&quot;第二个&quot;);
-   }
-   
-}
-
-</code></pre>
-<pre><code>package Textinterface;
-
-public interface Interface01 {
-   //这是一个抽象方法
-   public abstract void methodAbs();
-   
-   //修饰符和抽象方法可以省略
-   void methodAbs1();
 }
 </code></pre>
 ]]></content>
